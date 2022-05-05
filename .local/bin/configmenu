@@ -1,6 +1,6 @@
 #! /bin/sh
 
-chosen=$(printf "Alacritty\nBspwm\nSxhkd\nPolybar\nRofi\nDunst\nZsh\nVim" | rofi -dmenu -i -theme-str '@import "power.rasi"')
+chosen=$(printf "Alacritty\nBspwm\nSxhkd\nPolybar\nRofi\nDunst\nZsh\nVim\nNeofetch" | rofi -dmenu -i -theme-str '@import "power.rasi"' -p "Configs: ")
 
 case "$chosen" in
 	"Alacritty") alacritty -e vim ~/.config/alacritty/alacritty.yml ;;
@@ -11,5 +11,6 @@ case "$chosen" in
 	"Dunst") alacritty -e vim ~/.config/dunst/dunstrc ;;
 	"Zsh") alacritty -e vim ~/.zshrc ;;
 	"Vim") alacritty -e vim ~/.vimrc ;;
+	"Neofetch") alacritty -e vim ~/.config/neofetch/config.conf ;;
 	*) exit 1 ;;
 esac
