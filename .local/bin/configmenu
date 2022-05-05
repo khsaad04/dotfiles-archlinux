@@ -1,0 +1,15 @@
+#! /bin/sh
+
+chosen=$(printf "Alacritty\nBspwm\nSxhkd\nPolybar\nRofi\nDunst\nZsh\nVim" | rofi -dmenu -i -theme-str '@import "power.rasi"')
+
+case "$chosen" in
+	"Alacritty") alacritty -e vim ~/.config/alacritty/alacritty.yml ;;
+	"Bspwm") alacritty -e vim ~/.config/bspwm/bspwmrc ;;
+	"Sxhkd") alacritty -e vim ~/.config/sxhkd/sxhkdrc ;;
+	"Polybar") alacritty -e vim ~/.config/polybar/config.ini ;;
+	"Rofi") alacritty -e vim ~/.config/rofi/config.rasi ;;
+	"Dunst") alacritty -e vim ~/.config/dunst/dunstrc ;;
+	"Zsh") alacritty -e vim ~/.zshrc ;;
+	"Vim") alacritty -e vim ~/.vimrc ;;
+	*) exit 1 ;;
+esac
