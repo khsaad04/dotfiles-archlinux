@@ -8,7 +8,7 @@ case "$chosen" in
 	"Dunst") alacritty -e nvim ~/.config/dunst/dunstrc ;;
 	"Neofetch") alacritty -e nvim ~/.config/neofetch/config.conf ;;
 	"Neovim") alacritty -e nvim ~/.config/nvim/init.vim ;;
-	"Polybar") alacritty -e nvim ~/.config/polybar/config.ini ;;
+	"Polybar") configmenu2 ;;
 	"Rofi") alacritty -e nvim ~/.config/rofi/config.rasi ;;
 	"Sxhkd") alacritty -e nvim ~/.config/sxhkd/sxhkdrc ;;
 	"Zsh") alacritty -e nvim ~/.zshrc ;;
