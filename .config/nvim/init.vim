@@ -23,7 +23,8 @@ let g:tokyonight_style = 'night'
 let g:tokyonight_enable_italic = 1
 set laststatus=2
 
-" line numbers and syntax
+" syntax and stuff
 set number
 set relativenumber
 syntax on
+set mouse=a
