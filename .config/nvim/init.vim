@@ -27,5 +27,4 @@ set laststatus=2
 set number
 set relativenumber
 syntax on
-set mouse=a
 set noshowmode
