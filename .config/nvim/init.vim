@@ -25,6 +25,6 @@ set laststatus=2
 
 " syntax and stuff
 set number
-set relativenumber
 syntax on
 set noshowmode
+set autoindent
