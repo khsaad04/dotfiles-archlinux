@@ -5,6 +5,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'preservim/nerdtree'
 Plug 'ap/vim-css-color'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -28,3 +29,10 @@ set number
 syntax on
 set noshowmode
 set autoindent
+set nocompatible
+filetype plugin on
+
+" vimwiki
+
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
