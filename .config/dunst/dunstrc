@@ -151,7 +151,7 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<b>%s</b>\n%b"
+    format = %s\n%b
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
@@ -196,7 +196,7 @@
     max_icon_size = 32
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
+    icon_path = /usr/share/icons/Papirus/64x64/status/:/usr/share/icons/Papirus/64x64/apps/:/usr/share/icons/Papirus/64x64/devices/
 
     ### History ###
 
