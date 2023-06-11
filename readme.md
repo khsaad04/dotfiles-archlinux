@@ -1,0 +1,1 @@
+# Ohayo gozaimasu minna sama
