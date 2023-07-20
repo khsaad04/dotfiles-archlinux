@@ -1,0 +1,8 @@
+#!/bin/bash
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+dunst &
+waybar &
+wl-clipboard &
+nm-applet &
+hyprpaper &
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
