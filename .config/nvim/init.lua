@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 require('khsaad')
 =======
 --[[
@@ -517,3 +518,6 @@ cmp.setup {
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 >>>>>>> parent of a397012 (Sun Jul 23 06:29:35 PM +06 2023)
+=======
+require('khsaad')
+>>>>>>> parent of 9ca9170 (Sun Jul 23 06:11:52 PM +06 2023)
