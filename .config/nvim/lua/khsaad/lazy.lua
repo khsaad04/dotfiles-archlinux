@@ -16,7 +16,10 @@ require('lazy').setup {
   -- NOTE: First, some plugins that don't require any configuration
 
   -- Autopairs
-  'windwp/nvim-autopairs',
+  {
+    'windwp/nvim-autopairs',
+    config = {},
+  },
 
   -- Git related plugins
   'tpope/vim-fugitive',
