@@ -50,6 +50,8 @@ end
 --  the `settings` field of the server config. You must look up that documentation yourself.
 local servers = {
   rust_analyzer = {},
+  html = {},
+  cssls = {},
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
