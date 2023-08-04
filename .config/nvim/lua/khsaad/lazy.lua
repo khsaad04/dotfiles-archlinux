@@ -14,11 +14,16 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
   -- NOTE: First, some plugins that don't require any configuration
+  {
+    'giusgad/pets.nvim',
+    dependencies = { 'MunifTanjim/nui.nvim', 'giusgad/hologram.nvim' },
+    opts = {},
+  },
 
   -- Autopairs
   {
     'windwp/nvim-autopairs',
-    config = {},
+    opts = {},
   },
 
   -- Git related plugins
