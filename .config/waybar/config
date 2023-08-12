@@ -85,15 +85,15 @@
                 ""
             ]
         },
-        "on-scroll-up": "changevolume up",
-        "on-scroll-down": "changevolume down",
+        "on-scroll-up": "$HOME/.local/bin/changevolume up",
+        "on-scroll-down": "$HOME/.local/bin/changevolume down",
         "on-click": "pavucontrol"
     },
     "pulseaudio#text": {
         "format": "{volume}%",
         "tooltip": false,
-        "on-scroll-up": "changevolume up",
-        "on-scroll-down": "changevolume down",
+        "on-scroll-up": "$HOME/.local/bin/changevolume up",
+        "on-scroll-down": "$HOME/.local/bin/changevolume down",
         "on-click": "pavucontrol"
     },
     "mpris#player": {
@@ -129,7 +129,7 @@
     },
     "custom/power": {
         "format": "",
-        "on-click": "powermenu",
+        "on-click": "$HOME/.local/bin/powermenu",
         "tooltip": false
     }
 }
