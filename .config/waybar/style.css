@@ -12,7 +12,7 @@
 #pulseaudio,
 #tray {
     padding: 0px 10px;
-    border-radius: 10px;
+    border-radius: 4px;
     background: @surface0;
     color: @blue;
     box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
@@ -21,7 +21,7 @@
 
 window#waybar {
     background-color: rgba(30, 30, 46, 0.95);
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 tooltip {
@@ -46,7 +46,7 @@ tooltip {
 #workspaces button {
     box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
     background-color: @surface0;
-    border-radius: 10px;
+    border-radius: 4px;
     margin-right: 5px;
     padding: 10px;
     padding-top: 4px;
@@ -73,7 +73,7 @@ tooltip {
     color: @surface0;
     font-weight: normal;
     font-size: 16px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 4px 0px 0px 4px;
     padding-right: 12px;
     margin-right: 0px;
 }
@@ -83,7 +83,7 @@ tooltip {
 #pulseaudio.text {
     background: @surface0;
     color: @blue;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 4px 4px 0px;
     margin-right: 5px;
 }
 
@@ -91,7 +91,7 @@ tooltip {
     background: @surface0;
     font-size: 16px;
     font-weight: normal;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 4px 0px 0px 4px;
     padding: 0px 10px;
     margin-right: 0px;
 }
@@ -117,7 +117,7 @@ tooltip {
     background: @surface0;
     font-size: 16px;
     font-weight: normal;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 4px 4px 0px;
     padding: 0px 10px;
     margin-right: 0px;
 }
