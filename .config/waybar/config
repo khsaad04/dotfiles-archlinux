@@ -1,0 +1,135 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 5,
+    "margin-right": 5,
+    "margin-left": 5,
+    "spacing": 0,
+    "modules-left": [
+        "sway/workspaces",
+        "mpris#player",
+        "mpris#prev",
+        "mpris#status",
+        "mpris#next"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "pulseaudio#icon",
+        "pulseaudio#text",
+        "cpu#icon",
+        "cpu#text",
+        "memory#icon",
+        "memory#text",
+        "tray",
+        "custom/power"
+    ],
+    "wlr/workspaces": {
+        "on-click": "activate"
+    },
+    "tray": {
+        "icon-size": 15,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "󰥔 {:%I:%M %p}",
+        "format-alt": " {:%A, %B %d, %Y (%r)}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "interval": 1,
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "on-click-right": "mode",
+            "format": {
+                "months": "<span color='#89B4FA'><b>{}</b></span>",
+                "days": "<span color='#ffffff'><b>{}</b></span>",
+                "weekdays": "<span color='#94E2D5'><b>{}</b></span>",
+                "today": "<span color='#F38BA8'><b>{}</b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+    "cpu#icon": {
+        "format": "",
+        "tooltip": false
+    },
+    "cpu#text": {
+        "format": "{usage}%",
+        "tooltip": false
+    },
+    "memory#icon": {
+        "format": ""
+    },
+    "memory#text": {
+        "format": "{}%"
+    },
+    "pulseaudio#icon": {
+        "format": "{icon}",
+        "tooltip": false,
+        "format-icons": {
+            "headphone": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "on-scroll-up": "$HOME/.local/bin/changevolume up",
+        "on-scroll-down": "$HOME/.local/bin/changevolume down",
+        "on-click": "pavucontrol"
+    },
+    "pulseaudio#text": {
+        "format": "{volume}%",
+        "tooltip": false,
+        "on-scroll-up": "$HOME/.local/bin/changevolume up",
+        "on-scroll-down": "$HOME/.local/bin/changevolume down",
+        "on-click": "pavucontrol"
+    },
+    "mpris#player": {
+        "format": "{player_icon}",
+        "tooltip-format": "{dynamic}",
+        "interval": 1,
+        "player-icons": {
+            "spotify": "",
+            "firefox": ""
+        }
+    },
+    "mpris#prev": {
+        "format": "󰒮",
+        "on-click": "playerctl previous",
+        "interval": 1,
+        "tooltip": false
+    },
+    "mpris#status": {
+        "format": "{status_icon}",
+        "status-icons": {
+            "playing": "",
+            "paused": ""
+        },
+        "on-click": "playerctl play-pause",
+        "interval": 1,
+        "tooltip": false
+    },
+    "mpris#next": {
+        "format": "󰒭",
+        "on-click": "playerctl next",
+        "interval": 1,
+        "tooltip": false
+    },
+    "custom/power": {
+        "format": "",
+        "on-click": "$HOME/.local/bin/powermenu",
+        "tooltip": false
+    }
+}

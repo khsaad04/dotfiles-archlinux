@@ -1,0 +1,12 @@
+#!/bin/bash
+
+entries=" Shutdown\n Reboot"
+
+selected=$(echo -e $entries|wofi --dmenu --cache-file /dev/null | awk '{print tolower($2)}')
+
+case $selected in
+    shutdown)
+        shutdown now;;
+    reboot)
+        reboot;;
+esac

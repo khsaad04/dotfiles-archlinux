@@ -1,0 +1,139 @@
+@import "color.css";
+
+* {
+    font-family: FiraCode Nerd Font;
+    font-size: 11px;
+}
+
+#custom-power,
+#clock,
+#cpu,
+#memory,
+#pulseaudio,
+#tray {
+    padding: 0px 10px;
+    border-radius: 4px;
+    background: @surface0;
+    color: @blue;
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: rgba(30, 30, 46, 0.95);
+    border-radius: 4px;
+}
+
+tooltip {
+    background: @surface0;
+    border: 1px solid @blue;
+}
+
+#workspaces button label {
+    color: @blue;
+    font-weight: bolder;
+}
+
+#workspaces button.focused label {
+    color: @crust;
+    font-weight: bolder;
+}
+
+#workspaces {
+    background-color: transparent;
+}
+
+#workspaces button {
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+    background-color: @surface0;
+    border-radius: 4px;
+    margin-right: 5px;
+    padding: 10px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    font-weight: bolder;
+    color: @blue;
+    transition: all 0.5s cubic-bezier(0, 1, 0.6, 1);
+}
+
+#workspaces button.focused {
+    padding-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
+    padding-left: 20px;
+    padding-bottom: 3px;
+    background: @blue;
+    background-size: 400% 400%;
+    transition: all 0.3s cubic-bezier(0.5, 1.2, 0.4, 1);
+}
+
+#memory.icon,
+#cpu.icon,
+#pulseaudio.icon {
+    background: @blue;
+    color: @surface0;
+    font-weight: normal;
+    font-size: 16px;
+    border-radius: 4px 0px 0px 4px;
+    padding-right: 12px;
+    margin-right: 0px;
+}
+
+#memory.text,
+#cpu.text,
+#pulseaudio.text {
+    background: @surface0;
+    color: @blue;
+    border-radius: 0px 4px 4px 0px;
+    margin-right: 5px;
+}
+
+#mpris.player {
+    background: @surface0;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 4px 0px 0px 4px;
+    padding: 0px 10px;
+    margin-right: 0px;
+}
+
+#mpris.prev {
+    background: @surface0;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 0px;
+    padding: 0px 10px;
+    margin-right: 0px;
+}
+
+#mpris.status {
+    background: @surface0;
+    font-weight: normal;
+    border-radius: 0px;
+    padding: 0px 10px;
+    margin-right: 0px;
+}
+
+#mpris.next {
+    background: @surface0;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 0px 4px 4px 0px;
+    padding: 0px 10px;
+    margin-right: 0px;
+}
+
+#mpris.spotify {
+    color: #1ed760;
+}
+
+#mpris.firefox {
+    color: #ee8424;
+}
+
+#custom-power {
+    background: @blue;
+    color: @surface0;
+    font-size: 16px;
+    margin-left: 5px;
+    padding-right: 13px;
+}
