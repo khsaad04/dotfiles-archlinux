@@ -15,7 +15,6 @@
     border-radius: 4px;
     background: @surface0;
     color: @blue;
-    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
     font-weight: bold;
 }
 
@@ -62,7 +61,6 @@ tooltip {
     padding-left: 20px;
     padding-bottom: 3px;
     background: @blue;
-    background-size: 400% 400%;
     transition: all 0.3s cubic-bezier(0.5, 1.2, 0.4, 1);
 }
 
