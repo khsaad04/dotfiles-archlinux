@@ -32,16 +32,17 @@ tooltip {
 #workspaces button {
     background-color: transparent;
     margin-right: 5px;
-    padding: 0px 10px;
+    padding: 0px 5px;
     font-weight: bolder;
     color: @blue;
     transition: all 0.5s cubic-bezier(0, 1, 0.6, 1);
 }
 
 #workspaces button.focused {
-    padding: 0px 10px;
+    padding: 0px 5px;
     background: @blue;
     transition: all 0.3s cubic-bezier(0.5, 1.2, 0.4, 1);
+    border-radius: 4px;
 }
 
 #custom-power,
@@ -77,37 +78,33 @@ tooltip {
 }
 
 #mpris.player {
-    background: @surface0;
+    background: transparent;
     font-size: 16px;
     font-weight: normal;
-    border-radius: 4px 0px 0px 4px;
-    padding: 0px 10px;
+    padding: 0px 5px;
     margin-right: 0px;
 }
 
 #mpris.prev {
-    background: @surface0;
+    background: transparent;
     font-size: 16px;
     font-weight: normal;
-    border-radius: 0px;
-    padding: 0px 10px;
+    padding: 0px 5px;
     margin-right: 0px;
 }
 
 #mpris.status {
-    background: @surface0;
+    background: transparent;
     font-weight: normal;
-    border-radius: 0px;
-    padding: 0px 10px;
+    padding: 0px 5px;
     margin-right: 0px;
 }
 
 #mpris.next {
-    background: @surface0;
+    background: transparent;
     font-size: 16px;
     font-weight: normal;
-    border-radius: 0px 4px 4px 0px;
-    padding: 0px 10px;
+    padding: 0px 5px;
     margin-right: 0px;
 }
 
