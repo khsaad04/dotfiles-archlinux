@@ -2,20 +2,7 @@
 
 * {
     font-family: FiraCode Nerd Font;
-    font-size: 11px;
-}
-
-#custom-power,
-#clock,
-#cpu,
-#memory,
-#pulseaudio,
-#tray {
-    padding: 0px 10px;
-    border-radius: 4px;
-    background: @surface0;
-    color: @blue;
-    font-weight: bold;
+    font-size: 12px;
 }
 
 window#waybar {
@@ -43,46 +30,50 @@ tooltip {
 }
 
 #workspaces button {
-    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
-    background-color: @surface0;
-    border-radius: 4px;
+    background-color: transparent;
     margin-right: 5px;
-    padding: 10px;
-    padding-top: 4px;
-    padding-bottom: 2px;
+    padding: 0px 10px;
     font-weight: bolder;
     color: @blue;
     transition: all 0.5s cubic-bezier(0, 1, 0.6, 1);
 }
 
 #workspaces button.focused {
-    padding-right: 20px;
-    box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
-    padding-left: 20px;
-    padding-bottom: 3px;
+    padding: 0px 10px;
     background: @blue;
     transition: all 0.3s cubic-bezier(0.5, 1.2, 0.4, 1);
 }
 
-#memory.icon,
-#cpu.icon,
-#pulseaudio.icon {
-    background: @blue;
-    color: @surface0;
-    font-weight: normal;
-    font-size: 16px;
-    border-radius: 4px 0px 0px 4px;
-    padding-right: 12px;
-    margin-right: 0px;
+#custom-power,
+#clock,
+#cpu,
+#memory,
+#pulseaudio,
+#tray {
+    padding: 0px 10px;
+    background: transparent;
+    font-weight: bold;
 }
 
-#memory.text,
-#cpu.text,
-#pulseaudio.text {
-    background: @surface0;
-    color: @blue;
-    border-radius: 0px 4px 4px 0px;
-    margin-right: 5px;
+#clock {
+    color: @green;
+}
+
+#pulseaudio {
+    color: @mauve;
+}
+
+#cpu {
+    color: @sapphire;
+}
+
+#memory {
+    color: @peach;
+}
+
+#custom-power {
+    font-size: 16px;
+    color: @red;
 }
 
 #mpris.player {
@@ -126,12 +117,4 @@ tooltip {
 
 #mpris.firefox {
     color: #ee8424;
-}
-
-#custom-power {
-    background: @blue;
-    color: @surface0;
-    font-size: 16px;
-    margin-left: 5px;
-    padding-right: 13px;
 }

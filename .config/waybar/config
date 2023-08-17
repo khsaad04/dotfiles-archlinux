@@ -1,10 +1,10 @@
 {
     "layer": "top",
     "position": "top",
-    "margin-top": 5,
-    "margin-right": 5,
-    "margin-left": 5,
-    "spacing": 0,
+    "margin-top": 10,
+    "margin-right": 10,
+    "margin-left": 10,
+    "spacing": 5,
     "modules-left": [
         "sway/workspaces",
         "mpris#player",
@@ -16,12 +16,9 @@
         "clock"
     ],
     "modules-right": [
-        "pulseaudio#icon",
-        "pulseaudio#text",
-        "cpu#icon",
-        "cpu#text",
-        "memory#icon",
-        "memory#text",
+        "pulseaudio",
+        "cpu",
+        "memory",
         "tray",
         "custom/power"
     ],
@@ -57,22 +54,15 @@
             "on-scroll-down": "shift_down"
         }
     },
-    "cpu#icon": {
-        "format": "",
+    "cpu": {
+        "format": " {usage}%",
         "tooltip": false
     },
-    "cpu#text": {
-        "format": "{usage}%",
-        "tooltip": false
+    "memory": {
+        "format": " {}%"
     },
-    "memory#icon": {
-        "format": ""
-    },
-    "memory#text": {
-        "format": "{}%"
-    },
-    "pulseaudio#icon": {
-        "format": "{icon}",
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
         "tooltip": false,
         "format-icons": {
             "headphone": "",
@@ -85,13 +75,6 @@
                 ""
             ]
         },
-        "on-scroll-up": "$HOME/.local/bin/changevolume up",
-        "on-scroll-down": "$HOME/.local/bin/changevolume down",
-        "on-click": "pavucontrol"
-    },
-    "pulseaudio#text": {
-        "format": "{volume}%",
-        "tooltip": false,
         "on-scroll-up": "$HOME/.local/bin/changevolume up",
         "on-scroll-down": "$HOME/.local/bin/changevolume down",
         "on-click": "pavucontrol"
