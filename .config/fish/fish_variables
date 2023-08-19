@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export DISCORD_TOKEN:MTEyOTQxNDE2NzcwNzc4NzMyNQ\x2eGFvZVN\x2eQ6_KBFkMtaC_8vgXvy0zsU2kAxSIx4kxM7xidA
+SETUVAR --export MOZ_ENABLE_WAYLAND:1
 SETUVAR --export TOKEN:MTEyOTQxNDE2NzcwNzc4NzMyNQ\x2eG\x2dpWIZ\x2eZzmfVvA66l6LOTeqhPXnqz93LcRA6n8wMDfcFU
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
