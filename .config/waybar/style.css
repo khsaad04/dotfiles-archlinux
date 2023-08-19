@@ -3,6 +3,7 @@
 * {
     font-family: FiraCode Nerd Font;
     font-size: 12px;
+    font-weight: 700;
 }
 
 window#waybar {
@@ -16,12 +17,10 @@ tooltip {
 
 #workspaces button label {
     color: @subtext0;
-    font-weight: bolder;
 }
 
 #workspaces button.focused label {
     color: @blue;
-    font-weight: bolder;
 }
 
 #workspaces {
@@ -31,9 +30,9 @@ tooltip {
 #workspaces button {
     background-color: transparent;
     padding: 0px;
-    font-weight: bolder;
     color: @blue;
     transition: all 0.5s cubic-bezier(0, 1, 0.6, 1);
+    border-bottom: 2px solid rgba(30, 30, 46, 0.95);
     border-radius: 0px;
 }
 
@@ -52,7 +51,6 @@ tooltip {
 #tray {
     padding: 0px 10px;
     background: transparent;
-    font-weight: bold;
 }
 
 #clock {
