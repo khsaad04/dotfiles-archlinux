@@ -22,7 +22,7 @@
         "tray",
         "custom/power"
     ],
-    "wlr/workspaces": {
+    "sway/workspaces": {
         "on-click": "activate"
     },
     "tray": {
@@ -56,10 +56,12 @@
     },
     "cpu": {
         "format": " {usage}%",
-        "tooltip": false
+        "tooltip": false,
+        "interval": 1,
     },
     "memory": {
-        "format": " {}%"
+        "format": " {}%",
+        "interval": 1,
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
