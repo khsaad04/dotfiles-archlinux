@@ -196,7 +196,9 @@
     max_icon_size = 32
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/Papirus/64x64/status/:/usr/share/icons/Papirus/64x64/apps/:/usr/share/icons/Papirus/64x64/devices/
+    # icon_path = /usr/share/icons/Papirus/64x64/status/:/usr/share/icons/Papirus/64x64/apps/:/usr/share/icons/Papirus/64x64/devices/
+    icon_theme = Papirus
+    enable_recursive_icon_lookup = true
 
     ### History ###
 

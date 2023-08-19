@@ -204,10 +204,6 @@ assign {
     [app_id="firefox"] workspace number 2
 }
 
-for_window {
-    [app_id="kitty"] floating enable
-}
-
 #
 # Status Bar:
 #

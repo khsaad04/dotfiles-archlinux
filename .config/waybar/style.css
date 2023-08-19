@@ -7,7 +7,6 @@
 
 window#waybar {
     background-color: rgba(30, 30, 46, 0.95);
-    border-radius: 4px;
 }
 
 tooltip {
@@ -16,12 +15,12 @@ tooltip {
 }
 
 #workspaces button label {
-    color: @blue;
+    color: @subtext0;
     font-weight: bolder;
 }
 
 #workspaces button.focused label {
-    color: @crust;
+    color: @blue;
     font-weight: bolder;
 }
 
@@ -31,18 +30,18 @@ tooltip {
 
 #workspaces button {
     background-color: transparent;
-    margin-right: 5px;
-    padding: 0px 5px;
+    padding: 0px;
     font-weight: bolder;
     color: @blue;
     transition: all 0.5s cubic-bezier(0, 1, 0.6, 1);
+    border-radius: 0px;
 }
 
 #workspaces button.focused {
-    padding: 0px 5px;
-    background: @blue;
+    background: transparent;
     transition: all 0.3s cubic-bezier(0.5, 1.2, 0.4, 1);
-    border-radius: 4px;
+    border-bottom: 2px solid @blue;
+    border-radius: 0px;
 }
 
 #custom-power,
@@ -57,15 +56,15 @@ tooltip {
 }
 
 #clock {
-    color: @green;
+    color: @lavender;
 }
 
 #pulseaudio {
-    color: @mauve;
+    color: @sapphire;
 }
 
 #cpu {
-    color: @sapphire;
+    color: @green;
 }
 
 #memory {

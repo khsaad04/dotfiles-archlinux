@@ -1,7 +1,5 @@
 set -g fish_greeting
 
-set -gx MOZ_ENABLE_WAYLAND 1
-
 fish_add_path -aP ~/.cargo/bin
 fish_add_path -aP ~/.local/bin
 
