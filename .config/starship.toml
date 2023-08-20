@@ -1,12 +1,9 @@
 format = """
-[](fg:#769ff0)\
+[](fg:blue)\
 $username\
-[](fg:#769ff0 bg:#394260)\
+[](fg:blue bg:surface1)\
 $directory\
-[](fg:#394260 bg:#212736)\
-$git_branch\
-$git_status\
-[](fg:#212736)\
+[ ](fg:surface1 bg:base)\
 $all\
 $fill\
 $cmd_duration\
@@ -17,24 +14,15 @@ $time\
 palette = "catppuccin_mocha"
 
 [username]
-style_user = "fg:#e3e5e5 bg:#769ff0"
-style_root = "fg:yellow bg:#769ff0"
+style_user = "bold fg:crust bg:blue"
+style_root = "bold fg:yellow bg:blue"
 format = "[$user]($style)"
 show_always = true
 
 [directory]
-style = "bold fg:#769ff0 bg:#394260"
-read_only_style = "bold fg:#769ff0 bg:#394260"
-format = "[ [$path]($style)[$read_only]($read_only_style)](bg:#394260)"
-
-[git_branch]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol $branch ](bold fg:#769ff0 bg:#212736)]($style)'
-
-[git_status]
-style = "bg:#212736"
-format = '[[($all_status$ahead_behind)](bold fg:#769ff0 bg:#212736)]($style)'
+style = "bold fg:blue bg:surface1"
+read_only_style = "bold fg:blue bg:surface1"
+format = "[ [$path]($style)[$read_only]($read_only_style)](bg:surface1)"
 
 [line_break]
 disabled = true
