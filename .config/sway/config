@@ -7,8 +7,8 @@ exec vencord &
 
 font pango: FiraCode Nerd Regular 11
 
-gaps inner 5
-gaps outer 5
+gaps inner 2
+gaps outer 3
 
 default_border pixel 2
 
