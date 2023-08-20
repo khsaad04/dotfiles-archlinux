@@ -1,6 +1,6 @@
 prompt=Search...
 image_size=30
-width=500
-height=290
+width=450
+height=250
 insensitive=true
 location=center
