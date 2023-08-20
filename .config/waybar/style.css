@@ -4,10 +4,11 @@
     font-family: FiraCode Nerd Font;
     font-size: 11px;
     font-weight: 700;
+    border-radius: 4px;
 }
 
 window#waybar {
-    background-color: rgba(30, 30, 46, 0.95);
+    background-color: transparent;
 }
 
 tooltip {
@@ -24,23 +25,21 @@ tooltip {
 }
 
 #workspaces {
-    background-color: transparent;
+    background-color: rgba(30, 30, 46, 0.95);
 }
 
 #workspaces button {
     background-color: transparent;
     padding: 0px;
     color: @blue;
-    transition: all 0.5s cubic-bezier(0, 1, 0.6, 1);
-    border-bottom: 2px solid rgba(30, 30, 46, 0.95);
-    border-radius: 0px;
+    transition: all 0.3s ease;
+    border: 0;
 }
 
 #workspaces button.focused {
     background: transparent;
-    transition: all 0.3s cubic-bezier(0.5, 1.2, 0.4, 1);
-    border-bottom: 2px solid @blue;
-    border-radius: 0px;
+    transition: all 0.3s ease;
+    border: 0;
 }
 
 #custom-power,
@@ -49,8 +48,8 @@ tooltip {
 #memory,
 #pulseaudio,
 #tray {
-    padding: 5px 10px;
-    background: transparent;
+    padding: 4px 10px;
+    background-color: @base;
 }
 
 #clock {
@@ -59,50 +58,62 @@ tooltip {
 
 #pulseaudio {
     color: @sapphire;
+    border-radius: 4px 0 0 4px;
+    margin-left: 10px;
 }
 
 #cpu {
     color: @green;
+    border-radius: 0;
 }
 
 #memory {
     color: @peach;
+    border-radius: 0 4px 4px 0;
+    margin-right: 10px;
 }
 
 #custom-power {
     font-size: 16px;
     color: @red;
+    margin-left: 10px;
 }
 
 #mpris.player {
-    background: transparent;
+    background-color: @base;
     font-size: 16px;
     font-weight: normal;
     padding: 0px 5px;
     margin-right: 0px;
+    margin-left: 10px;
+    border-radius: 4px 0 0 4px;
 }
 
 #mpris.prev {
-    background: transparent;
+    background-color: @base;
     font-size: 16px;
     font-weight: normal;
     padding: 0px 5px;
     margin-right: 0px;
+    border-radius: 0;
 }
 
 #mpris.status {
-    background: transparent;
+    background-color: @base;
     font-weight: normal;
     padding: 0px 5px;
     margin-right: 0px;
+    border-radius: 0;
 }
 
 #mpris.next {
-    background: transparent;
+    background-color: @base;
     font-size: 16px;
     font-weight: normal;
     padding: 0px 5px;
     margin-right: 0px;
+    border-radius: 0 4px 4px 0;
+    margin-right: 10px;
 }
 
 #mpris.spotify {

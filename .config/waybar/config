@@ -1,8 +1,8 @@
 {
     "layer": "top",
     "position": "top",
-    "margin": 0,
-    "spacing": 5,
+    "margin": "5 5 0 5",
+    "spacing": 0,
     "modules-left": [
         "sway/workspaces",
         "mpris#player",
