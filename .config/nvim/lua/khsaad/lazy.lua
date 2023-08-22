@@ -14,12 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
   -- NOTE: First, some plugins that don't require any configuration
-  {
-    'giusgad/pets.nvim',
-    dependencies = { 'MunifTanjim/nui.nvim', 'giusgad/hologram.nvim' },
-    opts = {},
-  },
-
   -- Autopairs
   {
     'windwp/nvim-autopairs',
@@ -30,10 +24,8 @@ require('lazy').setup {
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
 
-  -- NOTE: This is where your plugins related to LSP can be installed.
-  --  The configuration is done below. Search for lspconfig to find it below.
   {
-    -- LSP Configuration & Plugins
+    -- LSP Plugins
     'neovim/nvim-lspconfig',
     dependencies = {
       -- Automatically install LSPs to stdpath for neovim
@@ -71,13 +63,14 @@ require('lazy').setup {
 
   -- Useful plugin to show you pending keybinds.
   { 'folke/which-key.nvim', opts = {} },
+
   {
     -- Adds git releated signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
   },
 
   {
-    -- Theme inspired by Atom
+    -- Catppuccin theme
     'catppuccin/nvim',
     name = 'catppuccin',
     priority = 1000,
