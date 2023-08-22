@@ -5,9 +5,7 @@ $username\
 $directory\
 [ ](fg:surface1 bg:base)\
 $all\
-$fill\
 $cmd_duration\
-$time\
 \n$character
 """
 
@@ -30,14 +28,9 @@ disabled = true
 [python]
 symbol = " "
 
-[fill]
-symbol = " "
-
-[time]
-disabled = false
-time_format = "%I:%M %p" # Hour:Minute Format
-style = "blue"
-format = '[[$time](fg:bold crust bg:blue)]($style)'
+[git_branch]
+format = ' [$symbol$branch(:$remote_branch)]($style) '
+style = 'bold mauve'
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
