@@ -11,13 +11,14 @@
         "mpris#next"
     ],
     "modules-center": [
-        "clock"
+        "sway/window",
     ],
     "modules-right": [
         "pulseaudio",
         "cpu",
         "memory",
         "tray",
+        "clock",
         "custom/power"
     ],
     "sway/workspaces": {

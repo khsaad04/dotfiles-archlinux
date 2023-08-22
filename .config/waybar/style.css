@@ -8,7 +8,8 @@
 }
 
 window#waybar {
-    background-color: rgba(30, 30, 46, 0.7);
+    color: @text;
+    background-color: rgba(30, 30, 46, .9);
 }
 
 tooltip {
@@ -25,7 +26,9 @@ tooltip {
 }
 
 #workspaces {
-    background-color: rgba(30, 30, 46, 0.95);
+    background-color: @crust;
+    margin: 5px 0px;
+    margin-left: 5px;
 }
 
 #workspaces button {
@@ -48,12 +51,9 @@ tooltip {
 #memory,
 #pulseaudio,
 #tray {
-    padding: 4px 10px;
-    background-color: rgba(30, 30, 46, 0.95);
-}
-
-#clock {
-    color: @lavender;
+    padding: 2px 10px;
+    margin: 5px 0px;
+    background-color: @crust;
 }
 
 #pulseaudio {
@@ -73,46 +73,47 @@ tooltip {
     margin-right: 5px;
 }
 
-#custom-power {
-    font-size: 18px;
-    color: @base;
-    background-color: @red;
+#clock {
+    color: @lavender;
     margin-left: 5px;
-    padding: 5px 12px 5px 8px;
 }
 
-#mpris.player {
-    background-color: rgba(30, 30, 46, 0.95);
+#custom-power {
+    font-size: 18px;
+    color: @crust;
+    background-color: @red;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px 12px 2px 8px;
+}
+
+#mpris {
+    background-color: @crust;
     font-size: 16px;
     font-weight: normal;
     padding: 0px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#mpris.player {
     margin-right: 0px;
     margin-left: 5px;
     border-radius: 4px 0 0 4px;
 }
 
 #mpris.prev {
-    background-color: rgba(30, 30, 46, 0.95);
-    font-size: 16px;
-    font-weight: normal;
-    padding: 0px 5px;
     margin-right: 0px;
     border-radius: 0;
 }
 
 #mpris.status {
-    background-color: rgba(30, 30, 46, 0.95);
-    font-weight: normal;
-    padding: 0px 5px;
+    font-size: 11px;
     margin-right: 0px;
     border-radius: 0;
 }
 
 #mpris.next {
-    background-color: rgba(30, 30, 46, 0.95);
-    font-size: 16px;
-    font-weight: normal;
-    padding: 0px 5px;
     margin-right: 0px;
     border-radius: 0 4px 4px 0;
     margin-right: 5px;
