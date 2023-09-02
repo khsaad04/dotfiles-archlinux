@@ -1,41 +1,46 @@
 * {
-  font-family: FiraCode Nerd;
-  font-size: 1rem;
-  color: #cdd6f4;
-  font-weight: 600;
-  background: transparent;
+    font-family: FiraCode Nerd;
+    font-size: 1rem;
+    color: #cdd6f4;
+    font-weight: 600;
+    background: transparent;
 }
 
 #window {
-  background: rgba(30, 30, 46, 0.95);
-  padding: 10px;
-  border-radius: 10px;
-  border: 2px solid #89b4fa;
+    margin: 0;
+    background: rgba(30, 30, 46, 0.95);
+    border-radius: 10px;
+    border: 2px solid #89b4fa;
 }
 
 #input {
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
+    border: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#input:focus {
+    border: 0;
 }
 
 #outer-box {
-  padding: 10px;
+    padding: 10px;
 }
 
 #img {
-  margin-right: 6px;
+    margin-right: 6px;
 }
 
 #entry {
-  padding: 10px;
-  border-radius: 10px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #entry:selected {
-  background-color: #2e3440;
+    background-color: #2e3440;
 }
 
 #text {
-  margin: 2px;
+    margin: 2px;
 }
