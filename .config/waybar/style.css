@@ -35,7 +35,7 @@ tooltip {
 
 #workspaces button {
     background-color: transparent;
-    padding: 8px;
+    padding: 8px 10px;
     color: @blue;
     transition: all 0.3s ease;
     border: 0;
