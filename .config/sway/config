@@ -9,6 +9,7 @@ font pango: FiraCode Nerd Regular 11
 
 gaps inner 5
 gaps outer 5
+corner_radius 5
 
 default_border pixel 2
 
