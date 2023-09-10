@@ -27,8 +27,7 @@ cd
 chmod +x .local/bin/*
 ```
 
-## Finishing touches
-Disable any desktop managers if you have them since it's not required for this rice. Just login to your user account and sway will be executed automatically by fish. But first we need to set fish as our login shell.
+## Change default shell
 
 ```sh
 chsh -s /bin/fish
