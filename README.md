@@ -13,7 +13,7 @@ makepkg -si
 
 ## Installing packages
 ```sh
-paru -Syu swayfx swaybg waybar pipewire pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-wlr qt5-wayland qt6-wayland fish kitty starship neovim ripgrep fd wofi dunst libnotify pamixer grim slurp sddm neofetch ttf-firacode-nerd --needed
+paru -Syu swayfx swaybg waybar pipewire pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-wlr qt5-wayland qt6-wayland fish kitty starship cava-git neovim ripgrep fd wofi dunst libnotify pamixer grim slurp sddm neofetch ttf-firacode-nerd --needed
 ```
 
 ## Copying dotfiles
