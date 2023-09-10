@@ -13,13 +13,7 @@ makepkg -si
 
 ## Installing packages
 ```sh
-paru -Syu swayfx swaybg waybar xdg-desktop-portal-wlr pipewire pipewire-pulse pipewire-jack wireplumber qt5-wayland qt6-wayland fish kitty starship neovim wofi dunst libnotify pamixer grim slurp exa-git ripgrep fd unzip sddm neofetch ttf-firacode-nerd --needed
-```
-
-Some LSPs for neovim optionally require npm.
-
-```sh
-paru -S npm
+paru -Syu swayfx swaybg waybar pipewire pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-wlr qt5-wayland qt6-wayland fish kitty starship neovim ripgrep fd wofi dunst libnotify pamixer grim slurp sddm neofetch ttf-firacode-nerd --needed
 ```
 
 ## Copying dotfiles
@@ -29,8 +23,7 @@ cd dotfiles
 git checkout sway
 cp -r .config/* ~/.config
 cp -r .local/* ~/.local
-cd 
-chmod +x .local/bin/*
+chmod +x ~/.local/bin/*
 ```
 
 ## Change default shell
