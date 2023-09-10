@@ -1,5 +1,7 @@
 ![preview](https://github.com/khsaad04/dotfiles/blob/sway/assets/preview.png?raw=true)
 
+![preview](https://github.com/khsaad04/dotfiles/blob/sway/assets/preview2.png?raw=true)
+
 # Installation 
 
 This is for Arch or Arch based linux distros. A fresh arch installation without any DE is recommended.
