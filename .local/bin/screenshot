@@ -3,11 +3,11 @@
 case $1 in
     select)
         SHAPE=$(slurp)
-        grim -g "$SHAPE" && notify-send "Screenshot saved"
+        grim -g "$SHAPE"
         grim -g "$SHAPE" - | wl-copy && notify-send "Screenshot saved to clipboaord" || notify-send "Invalid geometry"
         ;;
     *)
-        grim && notify-send "Screenshot saved"
+        grim
         grim - | wl-copy && notify-send "Screenshot saved to clipboaord"
         ;;
 esac

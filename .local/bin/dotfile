@@ -1,7 +1,7 @@
 #!/bin/bash
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add ~/.config/neofetch
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add ~/.config/dunst
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add ~/.config/fish
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add ~/.config/fish/config.fish
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add ~/.config/sway
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add ~/.config/kitty
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add ~/.config/nvim
