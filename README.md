@@ -13,7 +13,13 @@ makepkg -si
 
 ## Installing packages
 ```sh
-paru -Syu swayfx swaybg waybar xdg-desktop-portal-wlr pipewire pipewire-pulse pipewire-jack wireplumber qt5-wayland qt6-wayland fish kitty starship neovim wofi dunst libnotify pamixer grim slurp exa-git sddm neofetch ttf-firacode-nerd --needed
+paru -Syu swayfx swaybg waybar xdg-desktop-portal-wlr pipewire pipewire-pulse pipewire-jack wireplumber qt5-wayland qt6-wayland fish kitty starship neovim wofi dunst libnotify pamixer grim slurp exa-git ripgrep fd unzip sddm neofetch ttf-firacode-nerd --needed
+```
+
+Some LSPs for neovim optionally require npm.
+
+```sh
+paru -S npm
 ```
 
 ## Copying dotfiles
