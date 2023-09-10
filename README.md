@@ -1,5 +1,7 @@
 # Installation 
 
+![preview](https://github.com/khsaad04/dotfiles/blob/sway/assets/preview.png?raw=true)
+
 This is for Arch or Arch based linux distros. A fresh arch installation without any DE is recommended.
 
 ## Installing paru
