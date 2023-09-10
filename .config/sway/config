@@ -39,7 +39,7 @@ set {
 ### Output configuration
 
 # wallpaper
-output * bg /home/khsaad/.config/sway/wallpaper/wp1.jpg fill
+output * bg ~/.config/sway/wallpaper/wp1.jpg fill
 
 
 ### Input configuration
