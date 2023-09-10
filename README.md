@@ -18,6 +18,7 @@ paru -Syu swayfx swaybg waybar xdg-desktop-portal-wlr pipewire pipewire-pulse pi
 ```sh
 git clone https://github.com/khsaad04/dotfiles.git
 cd dotfiles
+git checkout sway
 cp -r .config/* ~/.config
 cp -r .local/* ~/.local
 cd 
@@ -25,7 +26,7 @@ chmod +x .local/bin/*
 ```
 
 ## Finishing touches
-Disable any desktop managers if you have them since it's not required for this rice. Just login to your user account and sway will be executed automatically by fish. But for that we need to use fish as our login shell.
+Disable any desktop managers if you have them since it's not required for this rice. Just login to your user account and sway will be executed automatically by fish. But first we need to set fish as our login shell.
 
 ```sh
 chsh -s /bin/fish
