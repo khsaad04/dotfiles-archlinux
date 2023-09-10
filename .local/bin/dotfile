@@ -9,4 +9,4 @@
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add ~/.config/starship.toml
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add ~/.config/mocha.qbtheme
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add ~/.local/bin
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -m "$(date)"
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -am "$(date)"

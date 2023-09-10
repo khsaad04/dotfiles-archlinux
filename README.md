@@ -1,6 +1,6 @@
 # Installation 
 
-This is for Arch or Arch based linux distros
+This is for Arch or Arch based linux distros. A fresh arch installation without any DE is recommended.
 
 ## Installing paru
 ```sh
@@ -22,4 +22,11 @@ cp -r .config/* ~/.config
 cp -r .local/* ~/.local
 cd 
 chmod +x .local/bin/*
+```
+
+## Finishing touches
+Disable any desktop managers if you have them since it's not required for this rice. Just login to your user account and sway will be executed automatically by fish. But for that we need to use fish as our login shell.
+
+```sh
+chsh -s /bin/fish
 ```
