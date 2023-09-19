@@ -2,15 +2,17 @@ include /etc/sway/config.d/*
 
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec wl-clipboard &
-exec nm-applet & --indicator
+exec nm-applet --indicator &
+exec vencord &
 
 font pango: FiraCode Nerd Regular 11
 
 gaps inner 5
 gaps outer 5
-corner_radius 5
+corner_radius 10
 
-default_border pixel 2
+# default_border pixel 2
+default_border none
 
 #                       <border>    <bg>        <text>      <indicator> <child_border>
 client.focused          #89b4fa     #000000     #ffffff     #89b4fa     #89b4fa
@@ -72,7 +74,7 @@ bindsym {
     $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit sway?' -B 'Yes, exit sway' 'swaymsg exit'
+    $mod+Shift+e exec swaynag -t warning -m 'Do you want to exit sway?' -B 'Yes' 'swaymsg exit'
 #
 # Moving around:
 #
@@ -205,7 +207,6 @@ bindsym $mod+r mode "resize"
 #
 assign {
     [app_id="firefox"] workspace number 2
-    [class="firefox"] workspace number 2
     [class="Spotify"] workspace number 3
     [class="VencordDesktop"] workspace number 4
 }

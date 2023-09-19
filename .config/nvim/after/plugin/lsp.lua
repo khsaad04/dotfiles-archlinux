@@ -1,4 +1,4 @@
-e-- [[ Configure LSP ]]
+-- [[ Configure LSP ]]
 --  This function gets run when an LSP connects to a particular buffer.
 local on_attach = function(_, bufnr)
     -- NOTE: Remember that lua is a real programming language, and as such it is possible
@@ -49,10 +49,27 @@ end
 --  Add any additional override configuration in the following tables. They will be passed to
 --  the `settings` field of the server config. You must look up that documentation yourself.
 local servers = {
-    lua_ls = {
-        Lua = {
-            workspace = { checkThirdParty = false },
-            telemetry = { enable = false },
+    tsserver = {},
+    rust_analyzer = {},
+    html = {},
+    cssls = {},
+    lua_ls = {},
+    pylsp = {
+        pylsp = {
+            plugins = {
+                pycodestyle = {
+                    enabled = false,
+                },
+                autopep8 = {
+                    enabled = false,
+                },
+                yapf = {
+                    enabled = false,
+                },
+                pyflakes = {
+                    enabled = false,
+                },
+            },
         },
     },
 }

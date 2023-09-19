@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "margin": 0,
+    "margin": "10 10 0 10",
     "spacing": 0,
     "modules-left": [
         "sway/workspaces",
@@ -11,22 +11,49 @@
         "mpris#next"
     ],
     "modules-center": [
-        "sway/window",
     ],
     "modules-right": [
         "pulseaudio",
         "cpu",
         "memory",
-        "tray",
+        "network",
         "clock",
+        "tray",
         "custom/power"
     ],
     "sway/workspaces": {
-        "on-click": "activate"
+        "on-click": "activate",
     },
-    "tray": {
-        "icon-size": 15,
-        "spacing": 10
+    "mpris#player": {
+        "format": "{player_icon}",
+        "tooltip-format": "{dynamic}",
+        "interval": 1,
+        "player-icons": {
+            "spotify": " ",
+            "firefox": " "
+        }
+    },
+    "mpris#prev": {
+        "format": "󰒮",
+        "on-click": "playerctl previous",
+        "interval": 1,
+        "tooltip": false
+    },
+    "mpris#status": {
+        "format": "{status_icon}",
+        "status-icons": {
+            "playing": "",
+            "paused": ""
+        },
+        "on-click": "playerctl play-pause",
+        "interval": 1,
+        "tooltip": false
+    },
+    "mpris#next": {
+        "format": "󰒭",
+        "on-click": "playerctl next",
+        "interval": 1,
+        "tooltip": false
     },
     "clock": {
         "format": "󰥔 {:%I:%M %p}",
@@ -80,36 +107,16 @@
         "on-scroll-down": "$HOME/.local/bin/changevolume down",
         "on-click": "pavucontrol"
     },
-    "mpris#player": {
-        "format": "{player_icon}",
-        "tooltip-format": "{dynamic}",
+    "network": {
+        "format-wifi": "󰖩 {signalStrength}% 󰕒 {bandwidthUpBytes} 󰇚 {bandwidthDownBytes}",
+        "format-ethernet": "󰈀 {bandwidthTotalBytes}",
+        "tooltip-format": "{essid}",
+        "tooltip-format-disconnected": "",
         "interval": 1,
-        "player-icons": {
-            "spotify": "",
-            "firefox": ""
-        }
     },
-    "mpris#prev": {
-        "format": "󰒮",
-        "on-click": "playerctl previous",
-        "interval": 1,
-        "tooltip": false
-    },
-    "mpris#status": {
-        "format": "{status_icon}",
-        "status-icons": {
-            "playing": "",
-            "paused": ""
-        },
-        "on-click": "playerctl play-pause",
-        "interval": 1,
-        "tooltip": false
-    },
-    "mpris#next": {
-        "format": "󰒭",
-        "on-click": "playerctl next",
-        "interval": 1,
-        "tooltip": false
+    "tray": {
+        "icon-size": 15,
+        "spacing": 10
     },
     "custom/power": {
         "format": "",
