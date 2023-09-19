@@ -49,29 +49,7 @@ end
 --  Add any additional override configuration in the following tables. They will be passed to
 --  the `settings` field of the server config. You must look up that documentation yourself.
 local servers = {
-    tsserver = {},
-    rust_analyzer = {},
-    html = {},
-    cssls = {},
     lua_ls = {},
-    pylsp = {
-        pylsp = {
-            plugins = {
-                pycodestyle = {
-                    enabled = false,
-                },
-                autopep8 = {
-                    enabled = false,
-                },
-                yapf = {
-                    enabled = false,
-                },
-                pyflakes = {
-                    enabled = false,
-                },
-            },
-        },
-    },
 }
 
 -- Setup neovim lua configuration

@@ -15,7 +15,7 @@ makepkg -si
 
 ## Installing packages
 ```sh
-paru -Syu swayfx swaybg waybar pipewire pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-wlr qt5-wayland qt6-wayland fish kitty starship cava-git neovim ripgrep fd wofi dunst libnotify pamixer grim slurp sddm neofetch ttf-firacode-nerd --needed
+paru -Syu swayfx swaybg waybar pipewire pipewire-pulse pipewire-jack pamixer wireplumber xord-xwayland xdg-desktop-portal-wlr qt5-wayland qt6-wayland grim slurp wofi kitty fish starship cava-git neofetch btop bat neovim ripgrep fd wl-clipboard dunst libnotify sddm ttf-firacode-nerd nwg-look catppucccin-gtk-theme-mocha papirus-icon-theme polkit-gnome --needed
 ```
 
 ## Copying dotfiles
