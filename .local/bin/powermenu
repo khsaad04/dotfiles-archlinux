@@ -1,10 +1,12 @@
 #!/bin/bash
 
-entries=" Shutdown\n⏾ Suspend\n󰒲 Hibernate\n Reboot"
+entries="󰗼 Exit\n Shutdown\n⏾ Suspend\n󰒲 Hibernate\n Reboot"
 
 selected=$(echo -e $entries|wofi --dmenu --cache-file /dev/null | awk '{print tolower($2)}')
 
 case $selected in
+    exit)
+        swaymsg exit;;
     shutdown)
         shutdown now;;
     suspend)

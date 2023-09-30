@@ -3,7 +3,6 @@ include /etc/sway/config.d/*
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec wl-clipboard &
 exec nm-applet --indicator &
-exec vencord &
 
 font pango: FiraCode Nerd Regular 11
 
@@ -73,8 +72,8 @@ bindsym {
     # Reload the configuration file
     $mod+Shift+c reload
 
-    # Exit sway (logs you out of your Wayland session)
-    $mod+Shift+e exec swaynag -t warning -m 'Do you want to exit sway?' -B 'Yes' 'swaymsg exit'
+    # Power Menu
+    $mod+x exec ~/.local/bin/powermenu
 #
 # Moving around:
 #
@@ -165,7 +164,7 @@ bindsym {
     # If there are multiple scratchpad windows, this command cycles through them.
     $mod+minus scratchpad show
 #
-# Custom keybinds
+# Volume & Print keybinds
 #
     Print exec $HOME/.local/bin/screenshot
     Shift+Print exec $HOME/.local/bin/screenshot select

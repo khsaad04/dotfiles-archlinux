@@ -10,13 +10,11 @@
         "mpris#status",
         "mpris#next"
     ],
-    "modules-center": [
-    ],
     "modules-right": [
+        "network",
         "pulseaudio",
         "cpu",
         "memory",
-        "network",
         "clock",
         "tray",
         "custom/power"
