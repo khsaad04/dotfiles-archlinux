@@ -3,11 +3,12 @@ include /etc/sway/config.d/*
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec wl-clipboard &
 exec nm-applet --indicator &
+exec firefox &
 
 font pango: FiraCode Nerd Regular 11
 
 gaps inner 5
-gaps outer 5
+gaps outer 0
 corner_radius 10
 
 # default_border pixel 2
@@ -172,6 +173,17 @@ bindsym {
     XF86AudioRaiseVolume exec $HOME/.local/bin/changevolume up
     XF86AudioLowerVolume exec $HOME/.local/bin/changevolume down
     XF86AudioMute exec $HOME/.local/bin/changevolume mute
+#
+# Spooky macros
+#
+    Mod1+Ctrl+f exec xdotool sleep 0.2 type 'h!catch werewolf' && xdotool sleep 0.2 key Return
+    Mod1+Ctrl+m exec xdotool sleep 0.2 type 'h!catch mummy' && xdotool sleep 0.2 key Return
+    Mod1+Ctrl+v exec xdotool sleep 0.2 type 'h!catch vampire' && xdotool sleep 0.2 key Return
+    Mod1+Ctrl+s exec xdotool sleep 0.2 type 'h!catch giantspider' && xdotool sleep 0.2 key Return
+    Mod1+Ctrl+p exec xdotool sleep 0.2 type 'h!catch pennywise' && xdotool sleep 0.2 key Return
+    Mod1+Ctrl+w exec xdotool sleep 0.2 type 'h!catch witch' && xdotool sleep 0.2 key Return
+    Mod1+Ctrl+g exec xdotool sleep 0.2 type 'h!catch ghost' && xdotool sleep 0.2 key Return
+    Mod1+Ctrl+z exec xdotool sleep 0.2 type 'h!catch zombie' && xdotool sleep 0.2 key Return
 }
 
 #
