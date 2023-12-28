@@ -33,13 +33,13 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 5x5
+    offset = 10x10
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
 
     # Maximum number of notification (0 means no limit)
-    notification_limit = 0
+    notification_limit = 4
 
     ### Progress bar ###
 
@@ -86,7 +86,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
     frame_color = "#89b4fa"
@@ -193,10 +193,12 @@
     min_icon_size = 0
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 32
+    max_icon_size = 64
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/Papirus/64x64/status/:/usr/share/icons/Papirus/64x64/apps/:/usr/share/icons/Papirus/64x64/devices/
+    # icon_path = /usr/share/icons/Papirus/64x64/status/:/usr/share/icons/Papirus/64x64/apps/:/usr/share/icons/Papirus/64x64/devices/
+    icon_theme = Papirus
+    enable_recursive_icon_lookup = true
 
     ### History ###
 
@@ -229,7 +231,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 10
+    corner_radius = 5
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -294,6 +296,7 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#1E1E2E"
     foreground = "#CDD6F4"
+    highlight = "#89b4fa"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     default_icon = /path/to/icon
@@ -301,6 +304,7 @@
 [urgency_normal]
     background = "#1E1E2E"
     foreground = "#CDD6F4"
+    highlight = "#89b4fa"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
     default_icon = /path/to/icon

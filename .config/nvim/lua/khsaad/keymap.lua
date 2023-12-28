@@ -1,12 +1,10 @@
--- [[ Basic Keymaps ]]
-
 local keymap = vim.keymap.set
 local opts = { silent = true }
 
 -- Keymaps for better default experience
 keymap({ 'n', 'v' }, '<Space>', '<Nop>', opts)
 
--- Normal --
+---- Normal ----
 -- Better window navigation
 keymap('n', '<C-h>', '<C-w>h', opts)
 keymap('n', '<C-j>', '<C-w>j', opts)
@@ -27,24 +25,26 @@ keymap('n', '<C-d>', '<C-d>zz', opts)
 keymap('n', '<C-u>', '<C-u>zz', opts)
 keymap('n', 'n', 'nzzzv', opts)
 keymap('n', 'N', 'Nzzzv', opts)
+keymap('n', 'j', 'jzz', opts)
+keymap('n', 'k', 'kzz', opts)
 
--- Insert --
+---- Insert ----
 keymap('i', '<C-c>', '<Esc>', opts)
 
--- Visual --
+---- Visual ----
 -- Stay in indent mode
 keymap('v', '<', '<gv', opts)
 keymap('v', '>', '>gv', opts)
 
--- Visual Block --
+---- Visual Block ----
 -- Move text up and down
 keymap('x', '<A-j>', ":move '>+1<CR>gv-gv", opts)
 keymap('x', '<A-k>', ":move '<-2<CR>gv-gv", opts)
 
 -- greatest remap ever
-keymap('x', '<leader>p', [["_dP]], opts)
+keymap('x', 'p', [["_dp]], opts)
 
--- Plugins --
+---- Plugins ----
 -- NvimTree
 keymap('n', '<C-e>', vim.cmd.NvimTreeFindFileToggle, opts)
 

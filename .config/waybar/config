@@ -1,36 +1,57 @@
 {
     "layer": "top",
     "position": "top",
-    "margin-top": 5,
-    "margin-right": 5,
-    "margin-left": 5,
+    "margin": "5 5 0 5",
     "spacing": 0,
     "modules-left": [
-        "wlr/workspaces",
+        "hyprland/workspaces",
         "mpris#player",
         "mpris#prev",
         "mpris#status",
         "mpris#next"
     ],
-    "modules-center": [
-        "clock"
-    ],
     "modules-right": [
-        "pulseaudio#icon",
-        "pulseaudio#text",
-        "cpu#icon",
-        "cpu#text",
-        "memory#icon",
-        "memory#text",
+        "network",
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "clock",
         "tray",
         "custom/power"
     ],
-    "wlr/workspaces": {
-        "on-click": "activate"
+    "hyprland/workspaces": {
+        "on-click": "activate",
     },
-    "tray": {
-        "icon-size": 15,
-        "spacing": 10
+    "mpris#player": {
+        "format": "{player_icon}",
+        "tooltip-format": "{dynamic}",
+        "interval": 1,
+        "player-icons": {
+            "spotify": " ",
+            "firefox": " "
+        }
+    },
+    "mpris#prev": {
+        "format": "󰒮",
+        "on-click": "playerctl previous",
+        "interval": 1,
+        "tooltip": false
+    },
+    "mpris#status": {
+        "format": "{status_icon}",
+        "status-icons": {
+            "playing": "",
+            "paused": ""
+        },
+        "on-click": "playerctl play-pause",
+        "interval": 1,
+        "tooltip": false
+    },
+    "mpris#next": {
+        "format": "󰒭",
+        "on-click": "playerctl next",
+        "interval": 1,
+        "tooltip": false
     },
     "clock": {
         "format": "󰥔 {:%I:%M %p}",
@@ -57,25 +78,20 @@
             "on-scroll-down": "shift_down"
         }
     },
-    "cpu#icon": {
-        "format": "",
-        "tooltip": false
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false,
+        "interval": 1,
     },
-    "cpu#text": {
-        "format": "{usage}%",
-        "tooltip": false
+    "memory": {
+        "format": " {}%",
+        "interval": 1,
     },
-    "memory#icon": {
-        "format": ""
-    },
-    "memory#text": {
-        "format": "{}%"
-    },
-    "pulseaudio#icon": {
-        "format": "{icon}",
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
         "tooltip": false,
         "format-icons": {
-            "headphone": "",
+            "headphone": "󰋋",
             "phone": "",
             "portable": "",
             "car": "",
@@ -89,43 +105,16 @@
         "on-scroll-down": "$HOME/.local/bin/changevolume down",
         "on-click": "pavucontrol"
     },
-    "pulseaudio#text": {
-        "format": "{volume}%",
-        "tooltip": false,
-        "on-scroll-up": "$HOME/.local/bin/changevolume up",
-        "on-scroll-down": "$HOME/.local/bin/changevolume down",
-        "on-click": "pavucontrol"
-    },
-    "mpris#player": {
-        "format": "{player_icon}",
-        "tooltip-format": "{dynamic}",
+    "network": {
+        "format-wifi": "󰖩 {signalStrength}% 󰕒 {bandwidthUpBytes} 󰇚 {bandwidthDownBytes}",
+        "format-ethernet": "󰈀 {bandwidthTotalBytes}",
+        "tooltip-format": "{essid}",
+        "tooltip-format-disconnected": "",
         "interval": 1,
-        "player-icons": {
-            "spotify": "",
-            "firefox": ""
-        }
     },
-    "mpris#prev": {
-        "format": "󰒮",
-        "on-click": "playerctl previous",
-        "interval": 1,
-        "tooltip": false
-    },
-    "mpris#status": {
-        "format": "{status_icon}",
-        "status-icons": {
-            "playing": "",
-            "paused": ""
-        },
-        "on-click": "playerctl play-pause",
-        "interval": 1,
-        "tooltip": false
-    },
-    "mpris#next": {
-        "format": "󰒭",
-        "on-click": "playerctl next",
-        "interval": 1,
-        "tooltip": false
+    "tray": {
+        "icon-size": 15,
+        "spacing": 10
     },
     "custom/power": {
         "format": "",

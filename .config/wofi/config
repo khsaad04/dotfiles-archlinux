@@ -1,6 +1,10 @@
+show=drun
 prompt=Search...
-image_size=30
-width=500
-height=290
+width=450
+height=300
+allow_images=true
+image_size=38
+term=kitty
+matching=fuzzy
 insensitive=true
 location=center

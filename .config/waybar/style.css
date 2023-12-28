@@ -1,27 +1,27 @@
 @import "color.css";
 
-* {
-    font-family: FiraCode Nerd Font;
-    font-size: 11px;
-}
-
-#custom-power,
-#clock,
+window#waybar,
+tooltip,
+#workspaces,
+#workspaces button,
+#workspaces button label,
+#mpris,
+#network,
+#pulseaudio,
 #cpu,
 #memory,
-#pulseaudio,
-#tray {
-    padding: 0px 10px;
-    border-radius: 4px;
-    background: @surface0;
-    color: @blue;
-    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
-    font-weight: bold;
+#clock,
+#custom-power {
+    all: initial;
+    font-family: FiraCode Nerd Font;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 5px;
 }
 
 window#waybar {
-    background-color: rgba(30, 30, 46, 0.95);
-    border-radius: 4px;
+    color: @text;
+    background: @base;
 }
 
 tooltip {
@@ -30,110 +30,114 @@ tooltip {
 }
 
 #workspaces button label {
-    color: @blue;
-    font-weight: bolder;
+    color: @subtext0;
 }
 
 #workspaces button.active label {
     color: @crust;
-    font-weight: bolder;
 }
 
 #workspaces {
-    background-color: transparent;
+    background-color: @crust;
 }
 
 #workspaces button {
-    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
-    background-color: @surface0;
-    border-radius: 4px;
-    margin-right: 5px;
-    padding: 10px;
-    padding-top: 4px;
-    padding-bottom: 2px;
-    font-weight: bolder;
+    background-color: transparent;
+    padding: 8px 10px;
     color: @blue;
-    transition: all 0.5s cubic-bezier(0, 1, 0.6, 1);
+    transition: all 0.3s ease;
+    border: 0;
 }
 
 #workspaces button.active {
-    padding-right: 20px;
-    box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
-    padding-left: 20px;
-    padding-bottom: 3px;
     background: @blue;
-    background-size: 400% 400%;
-    transition: all 0.3s cubic-bezier(0.5, 1.2, 0.4, 1);
+    transition: all 0.3s ease;
+    border: 0;
 }
 
-#memory.icon,
-#cpu.icon,
-#pulseaudio.icon {
-    background: @blue;
-    color: @surface0;
-    font-weight: normal;
+#mpris {
+    color: @crust;
     font-size: 16px;
-    border-radius: 4px 0px 0px 4px;
-    padding-right: 12px;
-    margin-right: 0px;
-}
-
-#memory.text,
-#cpu.text,
-#pulseaudio.text {
-    background: @surface0;
-    color: @blue;
-    border-radius: 0px 4px 4px 0px;
-    margin-right: 5px;
+    font-weight: bold;
+    padding: 0px 5px;
 }
 
 #mpris.player {
-    background: @surface0;
-    font-size: 16px;
     font-weight: normal;
-    border-radius: 4px 0px 0px 4px;
-    padding: 0px 10px;
     margin-right: 0px;
+    margin-left: 5px;
+    border-radius: 4px 0 0 4px;
+    padding-right: 0px;
 }
 
 #mpris.prev {
-    background: @surface0;
-    font-size: 16px;
-    font-weight: normal;
-    border-radius: 0px;
-    padding: 0px 10px;
     margin-right: 0px;
+    border-radius: 0;
 }
 
 #mpris.status {
-    background: @surface0;
-    font-weight: normal;
-    border-radius: 0px;
-    padding: 0px 10px;
+    font-size: 11px;
     margin-right: 0px;
+    border-radius: 0;
 }
 
 #mpris.next {
-    background: @surface0;
-    font-size: 16px;
-    font-weight: normal;
-    border-radius: 0px 4px 4px 0px;
-    padding: 0px 10px;
     margin-right: 0px;
+    border-radius: 0 4px 4px 0;
+    margin-right: 5px;
 }
 
 #mpris.spotify {
-    color: #1ed760;
+    background-color: #1ed760;
 }
 
 #mpris.firefox {
-    color: #ee8424;
+    background-color: #ee8424;
+}
+
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#clock,
+#tray,
+#custom-power {
+    padding: 2px 10px;
+    background-color: @crust;
+    margin: 0px 2.5px;
+    border-radius: 5px;
+}
+
+#clock {
+    color: @sapphire;
+}
+
+#pulseaudio {
+    color: @teal;
+    border-radius: 4px 0 0 4px;
+    margin-right: 0px;
+}
+
+#cpu {
+    color: @yellow;
+    border-radius: 0;
+    margin: 0;
+}
+
+#memory {
+    color: @maroon;
+    border-radius: 0 4px 4px 0;
+    margin-left: 0px;
+}
+
+#network {
+    color: @mauve;
 }
 
 #custom-power {
-    background: @blue;
-    color: @surface0;
-    font-size: 16px;
-    margin-left: 5px;
-    padding-right: 13px;
+    font-size: 18px;
+    color: @crust;
+    background-color: @red;
+    margin-right: 0px;
+    padding: 0px 11px 0px 7px;
 }
