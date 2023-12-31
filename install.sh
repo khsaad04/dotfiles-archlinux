@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Installing paru
+sudo pacman -S rust --noconfirm
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
