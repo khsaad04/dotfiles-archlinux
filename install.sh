@@ -1,17 +1,11 @@
 #!/bin/sh
 
 # Installing necessary packages
-paru -Syu hyprland swww waybar-hyprland pipewire pipewire-pulse pipewire-jack pamixer wireplumber xorg-xwayland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland grim slurp wofi kitty fish starship cava-git neofetch btop bat neovim ripgrep fd unzip npm wl-clipboard dunst libnotify ttf-firacode-nerd catppuccin-gtk-theme-mocha papirus-icon-theme polkit-gnome --needed --noconfirm
+paru -Syu hyprland swww waybar-hyprland pamixer grim slurp wofi kitty fish starship cava-git neofetch neovim wl-clipboard dunst libnotify ttf-firacode-nerd catppuccin-gtk-theme-mocha papirus-icon-theme --needed --noconfirm
 
 # Copying over dotfiles
-git clone --depth 1 -b hyprland --single-branch https://github.com/khsaad04/dotfiles.git khsaad-dotfiles
-
-if [ ! -d ".config" ]; then
-  mkdir .config
-fi
-
-cp -r khsaad-dotfiles/.config/* ~/.config
-cp -r khsaad-dotfiles/.local/* ~/.local
+git clone --depth 1 -b hyprland --single-branch https://github.com/khsaad04/dotfiles.git /tmp/khsaad-dotfiles
+cp -r /tmp/khsaad-dotfiles/.config/* ~/.config
 
 # Switching default shell to fish
 sudo chsh -s /bin/fish
