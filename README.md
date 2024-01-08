@@ -1,16 +1,17 @@
 # Installation 
 
-This is for Arch or Arch based linux distros. A fresh arch installation without any DE is recommended.
+This is for Arch or Arch based linux distros. But you can try this on any distro as long as you can suffice the dependencies.
 
-- ### Dependencies
+- ##### Dependencies
 ```sh
-hyprland swww waybar-hyprland pamixer wofi kitty fish starship cava-git neofetch dunst libnotify ttf-firacode-nerd catppuccin-gtk-theme-mocha papirus-icon-theme
+hyprland swww waybar-hyprland pamixer wofi kitty fish starship dunst libnotify ttf-firacode-nerd catppuccin-gtk-theme-mocha papirus-icon-theme
 ```
 
-- ### Optional Dependencies
+- ##### Optional Dependencies
 ```sh
-grip slurp #for taking screenshots
-neovim ripgrep fd unzip npm #for my nvim setup
+grip slurp # For taking screenshots
+neovim ripgrep fd unzip npm # For my nvim setup
+cava-git neofetch btop bat # Cli utilities
 ```
 
 #### First we need to install paru the AUR helper:
