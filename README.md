@@ -25,5 +25,5 @@ cd
 
 #### Using curl to run the installation script:
 ```sh
-curl -s https://raw.githubusercontent.com/khsaad04/dotfiles/hyprland/install.sh | sh
+curl -s -L https://raw.githubusercontent.com/khsaad04/dotfiles/hyprland/install.sh | bash
 ```
