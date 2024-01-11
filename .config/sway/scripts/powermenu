@@ -6,7 +6,7 @@ selected=$(echo -e $entries|wofi --dmenu --cache-file /dev/null | awk '{print to
 
 case $selected in
     exit)
-        swaymsg exit;;
+        hyprctl dispatch exit;;
     shutdown)
         shutdown now;;
     suspend)

@@ -13,7 +13,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
-    -- NOTE: First, some plugins that don't require any configuration
     -- Autopairs
     {
         'windwp/nvim-autopairs',
@@ -104,6 +103,9 @@ require('lazy').setup {
         opts = {
             indent = {
                 char = '┊'
+            },
+            scope = {
+                enabled = false
             },
         },
     },

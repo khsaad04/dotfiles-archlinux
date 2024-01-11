@@ -101,8 +101,8 @@
                 ""
             ]
         },
-        "on-scroll-up": "$HOME/.local/bin/changevolume up",
-        "on-scroll-down": "$HOME/.local/bin/changevolume down",
+        "on-scroll-up": "changevolume up",
+        "on-scroll-down": "changevolume down",
         "on-click": "pavucontrol"
     },
     "network": {
@@ -118,7 +118,7 @@
     },
     "custom/power": {
         "format": "",
-        "on-click": "$HOME/.local/bin/powermenu",
+        "on-click": "powermenu",
         "tooltip": false
     }
 }

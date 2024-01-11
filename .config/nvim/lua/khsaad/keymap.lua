@@ -42,7 +42,7 @@ keymap('x', '<A-j>', ":move '>+1<CR>gv-gv", opts)
 keymap('x', '<A-k>', ":move '<-2<CR>gv-gv", opts)
 
 -- greatest remap ever
-keymap('x', 'p', [["_dP]], opts)
+keymap('x', 'p', [["_dp]], opts)
 
 ---- Plugins ----
 -- NvimTree
