@@ -4,7 +4,7 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec wl-clipboard &
 exec nm-applet --indicator &
 exec firefox &
-exec swww img ~/.config/sway/wallpaper/wp1.jpg
+exec swww img ~/.config/sway/wallpaper/wp6.jpg
 
 font pango: FiraCode Nerd Regular 11
 
