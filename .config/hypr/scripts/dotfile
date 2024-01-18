@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+import os
+
+configs = [ 
+    "bat",
+    "btop",
+    "cava",
+    "dunst",
+    "fish/config.fish",
+    "fish/themes",
+    "gtk-3.0",
+    "gtk-4.0",
+    "hypr",
+    "kitty",
+    "mocha.qbtheme",
+    "neofetch",
+    "nvim",
+    "starship.toml",
+    "waybar",
+    "wofi",
+]
+
+for i in configs:
+    os.system(f"/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add ~/.config/{i}")
+
+os.system('/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -am "$(date)"')
