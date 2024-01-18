@@ -12,7 +12,7 @@ hyprland swww waybar-hyprland pamixer wofi kitty fish starship dunst libnotify t
 grip slurp # For taking screenshots
 wl-clipboard # Clipboard daemon
 neovim ripgrep fd unzip npm # For my nvim setup
-cava-git neofetch btop bat # Cli utilities
+cava neofetch btop bat # Cli utilities
 ```
 
 #### First we need to install paru the AUR helper:
