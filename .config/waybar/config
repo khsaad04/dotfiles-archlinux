@@ -4,7 +4,7 @@
     "margin": "5 5 0 5",
     "spacing": 0,
     "modules-left": [
-        "sway/workspaces",
+        "hyprland/workspaces",
         "mpris#player",
         "mpris#prev",
         "mpris#status",
@@ -19,7 +19,7 @@
         "tray",
         "custom/power"
     ],
-    "sway/workspaces": {
+    "hyprland/workspaces": {
         "on-click": "activate",
     },
     "mpris#player": {

@@ -1,6 +1,6 @@
 set -g fish_greeting
 
-fish_add_path -aP ~/.config/sway/scripts
+fish_add_path -aP ~/.config/hypr/scripts
 
 alias vim='nvim'
 
