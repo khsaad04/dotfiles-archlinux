@@ -28,7 +28,7 @@ tooltip {
 }
 
 #workspaces button label {
-    color: #1e1e2e;
+    color: #050505;
 }
 
 #workspaces button.active label {
@@ -42,7 +42,7 @@ tooltip {
 
 #workspaces button {
     background: transparent;
-    padding: 4px 10px;
+    padding: 4px 8px;
     color: #89b4fa;
     transition: all 0.3s ease;
     border: 0;
@@ -119,14 +119,20 @@ tooltip {
     border-radius: 0 8px 8px 0;
     margin-left: 0px;
 }
- #tray {
-     background-color: #313244;
- }
+
+#tray {
+    background-color: #313244;
+    border-radius: 8px 0 0 8px;
+    margin-right: 0;
+    margin-left: 5px;
+}
 
 #custom-power {
     font-size: 16px;
     color: #050505;
     background-color: #f38ba8;
+    border-radius: 0 8px 8px 0;
     margin-right: 0px;
+    margin-left: 0px;
     padding: 0px 10px 0px 6px;
 }
