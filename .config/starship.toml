@@ -3,7 +3,7 @@ format = """
 $username\
 [](fg:blue bg:surface1)\
 $directory\
-[ ](fg:surface1 bg:base)\
+[](fg:surface1 bg:base)\
 $all\
 $cmd_duration\
 \n$character
@@ -32,6 +32,9 @@ symbol = " "
 format = ' [$symbol$branch(:$remote_branch)]($style) '
 symbol = ' '
 style = 'bold blue'
+
+[cmd_duration]
+format = ' took [$duration]($style)'
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
