@@ -4,7 +4,7 @@ This is for Arch or Arch based linux distros. But you can try this on any distro
 
 - ##### Dependencies
 ```sh
-hyprland swww waybar-hyprland pamixer wofi kitty fish starship dunst libnotify ttf-firacode-nerd catppuccin-gtk-theme-mocha papirus-icon-theme
+hyprland swww waybar-hyprland pamixer wofi foot fish starship dunst libnotify ttf-firacode-nerd catppuccin-gtk-theme-mocha papirus-icon-theme
 ```
 
 - ##### Optional Dependencies
