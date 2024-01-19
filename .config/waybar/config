@@ -20,7 +20,7 @@
         "custom/power"
     ],
     "hyprland/workspaces": {
-        "on-click": "activate",
+      "on-click": "activate",
     },
     "mpris#player": {
         "format": "{player_icon}",
