@@ -53,6 +53,38 @@
         "interval": 1,
         "tooltip": false
     },
+    "network": {
+        "format-wifi": "󰖩 {signalStrength}% 󰕒 {bandwidthUpBytes} 󰇚 {bandwidthDownBytes}",
+        "format-ethernet": "󰈀 {bandwidthTotalBytes}",
+        "tooltip-format": "{essid}",
+        "tooltip-format-disconnected": "",
+        "interval": 1,
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟",
+        "tooltip": false,
+        "format-icons": {
+            "headphone": "󰋋",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "on-scroll-up": "changevolume up",
+        "on-scroll-down": "changevolume down",
+        "on-click": "changevolume mute"
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false,
+        "interval": 1,
+    },
+    "memory": {
+        "format": " {}%",
+        "interval": 1,
+    },
     "clock": {
         "format": "󰥔 {:%I:%M %p}",
         "format-alt": " {:%A, %B %d, %Y (%r)}",
@@ -77,40 +109,6 @@
             "on-scroll-up": "shift_up",
             "on-scroll-down": "shift_down"
         }
-    },
-    "cpu": {
-        "format": " {usage}%",
-        "tooltip": false,
-        "interval": 1,
-    },
-    "memory": {
-        "format": " {}%",
-        "interval": 1,
-    },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "tooltip": false,
-        "format-icons": {
-            "headphone": "󰋋",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": [
-                "",
-                "",
-                ""
-            ]
-        },
-        "on-scroll-up": "changevolume up",
-        "on-scroll-down": "changevolume down",
-        "on-click": "pavucontrol"
-    },
-    "network": {
-        "format-wifi": "󰖩 {signalStrength}% 󰕒 {bandwidthUpBytes} 󰇚 {bandwidthDownBytes}",
-        "format-ethernet": "󰈀 {bandwidthTotalBytes}",
-        "tooltip-format": "{essid}",
-        "tooltip-format-disconnected": "",
-        "interval": 1,
     },
     "tray": {
         "icon-size": 15,

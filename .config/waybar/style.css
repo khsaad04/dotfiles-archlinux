@@ -18,7 +18,7 @@ tooltip,
 }
 
 window#waybar {
-    color: #e3e3e3;
+    color: #d4d4ca;
     background: transparent;
 }
 
@@ -28,15 +28,15 @@ tooltip {
 }
 
 #workspaces button label {
-    color: #050505;
+    color: #d4d4ca;
 }
 
 #workspaces button.active label {
-    color: #e3e3e3;
+    color: #313244;
 }
 
 #workspaces {
-    background-color: #e3e3e3;
+    background-color: #313244;
     border-radius: 10px;
 }
 
@@ -49,12 +49,12 @@ tooltip {
 }
 
 #workspaces button.active {
-    background-color: #313244;
+    background-color: #d4d4ca;
     transition: all 0.3s ease;
 }
 
 #mpris {
-    color: #050505;
+    color: #20202A;
     font-size: 13px;
     padding: 0px 5px;
 }
@@ -98,9 +98,9 @@ tooltip {
 #clock,
 #tray,
 #custom-power {
-    color: #050505;
+    color: #20202A;
     padding: 0px 6px;
-    background-color: #e3e3e3;
+    background-color: #d4d4ca;
     margin: 0px 2px;
     border-radius: 8px;
 }
@@ -129,7 +129,7 @@ tooltip {
 
 #custom-power {
     font-size: 16px;
-    color: #050505;
+    color: #20202A;
     background-color: #f38ba8;
     border-radius: 0 8px 8px 0;
     margin-right: 0px;
