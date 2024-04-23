@@ -1,0 +1,155 @@
+window#waybar,
+tooltip,
+#workspaces,
+#workspaces button,
+#workspaces button label,
+#mpris,
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#clock,
+#custom-power {
+    all: initial;
+    font-family: Iosevka Regular, Symbols Nerd Font Mono, Noto Sans Bengali;
+    font-size: 10px;
+}
+
+window#waybar {
+    color: #cdd6f4;
+    background-color: #1e1e2e;
+}
+
+tooltip {
+    background-color: #1e1e2e;
+    border: 1px solid #89b4fa;
+    border-radius: 2px;
+}
+
+#workspaces {
+    background-color: #181825;
+    border-radius: 2px;
+    margin: 2px 2px;
+}
+
+#workspaces button {
+    background: transparent;
+    border-radius: 2px;
+    padding: 0px 4px;
+    margin: 2px 2px;
+    transition: all 0.3s ease;
+    border: 0;
+}
+
+#workspaces button label {
+    color: #585b70;
+}
+
+#workspaces button.active label {
+    color: #cdd6f4;
+}
+
+#workspaces button.focused label {
+    color: #cdd6f4;
+}
+
+#mpris {
+    color: #1e1e2e;
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 0px 4px;
+}
+
+#mpris.player {
+    margin-right: 0px;
+    margin-left: 2px;
+    border-radius: 2px 0 0 2px;
+}
+
+#mpris.prev {
+    font-size: 9px;
+    margin-right: 0px;
+    border-radius: 0;
+}
+
+#mpris.status {
+    font-size: 9px;
+    margin-right: 0px;
+    border-radius: 0;
+}
+
+#mpris.next {
+    font-size: 9px;
+    border-radius: 0 2px 2px 0;
+    margin-right: 2px;
+}
+
+#mpris.spotify {
+    background-color: #1ed760;
+}
+
+#mpris.firefox {
+    background-color: #ee8424;
+}
+
+#window {
+    margin: 2px 2px;
+}
+
+#network {
+    color: #cdd6f4;
+    background-color: #181825;
+    border-radius: 2px;
+    margin: 2px 2px;
+    padding: 0px 4px;
+}
+
+#pulseaudio {
+    color: #cdd6f4;
+    background-color: #181825;
+    border-radius: 2px;
+    margin: 2px 2px;
+    padding: 0px 4px;
+}
+
+#cpu {
+    color: #cdd6f4;
+    background-color: #181825;
+    border-radius: 2px;
+    margin: 2px 2px;
+    padding: 0px 4px;
+}
+
+#memory {
+    color: #cdd6f4;
+    background-color: #181825;
+    border-radius: 2px;
+    margin: 2px 2px;
+    padding: 0px 4px;
+}
+
+#clock {
+    color: #cdd6f4;
+    background-color: #181825;
+    border-radius: 2px;
+    margin: 2px 2px;
+    padding: 0px 4px;
+}
+
+#tray {
+    background-color: #181825;
+    border-radius: 2px;
+    margin: 2px 2px;
+    padding: 0px 4px;
+}
+
+#custom-power {
+    font-size: 12px;
+    font-weight: 400;
+    color: #89b4fa;
+    background-color: #181825;
+    border-radius: 2px;
+    margin: 2px 2px;
+    padding: 0px 4px;
+}

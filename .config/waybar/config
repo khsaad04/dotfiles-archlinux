@@ -1,0 +1,138 @@
+[
+  {
+    "clock": {
+      "actions": {
+        "on-click-backward": "tz_down",
+        "on-click-forward": "tz_up",
+        "on-click-right": "mode",
+        "on-scroll-down": "shift_down",
+        "on-scroll-up": "shift_up"
+      },
+      "calendar": {
+        "format": {
+          "days": "<span color='#cdd6f4'><b>{}</b></span>",
+          "months": "<span color='#89b4fa'><b>{}</b></span>",
+          "today": "<span color='#f38ba8'><b>{}</b></span>",
+          "weekdays": "<span color='#94e2d5'><b>{}</b></span>"
+        },
+        "mode": "month",
+        "mode-mon-col": 3,
+        "on-click-right": "mode",
+        "on-scroll": 1
+      },
+      "format": "{:%A, %B %d, %Y (%r)}",
+      "interval": 1,
+      "justify": "center",
+      "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": {
+      "format": " {usage}%",
+      "interval": 1,
+      "justify": "center",
+      "tooltip": false
+    },
+    "custom/power": {
+      "format": "󱄅",
+      "justify": "center",
+      "on-click": "powermenu",
+      "tooltip": false
+    },
+    "hyprland/workspaces": {
+      "on-click": "activate"
+    },
+    "layer": "top",
+    "margin": "0 0 0 0",
+    "memory": {
+      "format": " {}%",
+      "interval": 1,
+      "justify": "center"
+    },
+    "modules-center": [],
+    "modules-left": [
+      "custom/power",
+      "hyprland/workspaces",
+      "sway/workspaces",
+      "mpris#player",
+      "mpris#prev",
+      "mpris#status",
+      "mpris#next",
+      "hyprland/window",
+      "sway/window"
+    ],
+    "modules-right": [
+      "network",
+      "pulseaudio",
+      "cpu",
+      "memory",
+      "clock",
+      "tray"
+    ],
+    "mpris#next": {
+      "format": "󰒭",
+      "interval": 1,
+      "justify": "center",
+      "on-click": "playerctl next",
+      "tooltip": false
+    },
+    "mpris#player": {
+      "format": "{player_icon}",
+      "interval": 1,
+      "justify": "center",
+      "player-icons": {
+        "firefox": "󰈹",
+        "spotify": ""
+      },
+      "tooltip-format": "{dynamic}"
+    },
+    "mpris#prev": {
+      "format": "󰒮",
+      "interval": 1,
+      "justify": "center",
+      "on-click": "playerctl previous",
+      "tooltip": false
+    },
+    "mpris#status": {
+      "format": "{status_icon}",
+      "interval": 1,
+      "justify": "center",
+      "on-click": "playerctl play-pause",
+      "status-icons": {
+        "paused": "",
+        "playing": ""
+      },
+      "tooltip": false
+    },
+    "network": {
+      "format-ethernet": "󰈀 {bandwidthTotalBytes}",
+      "format-wifi": "󰖩 {signalStrength}%",
+      "interval": 1,
+      "justify": "center",
+      "tooltip-format": "{essid}",
+      "tooltip-format-disconnected": ""
+    },
+    "position": "top",
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-icons": {
+        "default": [
+          "",
+          "",
+          ""
+        ],
+        "headphone": "󰋋"
+      },
+      "format-muted": "󰝟",
+      "justify": "center",
+      "on-click": "changevolume mute",
+      "on-scroll-down": "changevolume down",
+      "on-scroll-up": "changevolume up",
+      "tooltip": false
+    },
+    "spacing": 0,
+    "tray": {
+      "icon-size": 12,
+      "justify": "center",
+      "spacing": 5
+    }
+  }
+]

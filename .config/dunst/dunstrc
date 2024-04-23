@@ -1,0 +1,30 @@
+[global]
+corner_radius=8
+font="Iosevka 10"
+frame_color="#89b4fa"
+frame_width=0
+height=300
+icon_theme = Papirus
+enable_recursive_icon_lookup = true
+notification_limit=4
+offset="10x10"
+origin="top-right"
+width=300
+
+[urgency_critical]
+background="#f38ba8"
+foreground="#1e1e2e"
+frame_color="#1e1e2e"
+timeout=0
+
+[urgency_low]
+background="#181825"
+foreground="#cdd6f4"
+highlight="#89b4fa"
+timeout=10
+
+[urgency_normal]
+background="#181825"
+foreground="#cdd6f4"
+highlight="#89b4fa"
+timeout=10

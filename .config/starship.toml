@@ -1,0 +1,25 @@
+format = "[](fg:#89b4fa)$username[](fg:#89b4fa bg:#45475a)$directory[](fg:#45475a)$all$cmd_duration\n$character"
+[cmd_duration]
+format = " took [$duration]($style)"
+
+[directory]
+format = "[[ $path]($style)[$read_only]($read_only_style)](bg:surface1)"
+read_only_style = "bold fg:#89b4fa bg:#45475a"
+style = "bold fg:#89b4fa bg:#45475a"
+
+[git_branch]
+format = " [$symbol$branch(:$remote_branch)]($style) "
+style = "bold #89b4fa"
+symbol = " "
+
+[line_break]
+disabled = true
+
+[python]
+symbol = " "
+
+[username]
+format = "[$user]($style)"
+show_always = true
+style_root = "bold fg:#f9e2af bg:#89b4fa"
+style_user = "bold fg:#181825 bg:#89b4fa"

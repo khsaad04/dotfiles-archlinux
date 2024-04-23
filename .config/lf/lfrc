@@ -1,0 +1,24 @@
+set drawbox
+set hidden
+set icons
+set ignorecase
+set preview
+set sixel
+
+cmd open ${{
+            case $(file --mime-type -Lb $f) in
+                text/*) lf -remote "send $id \$$EDITOR \$fx";;
+                *) for f in $fx; do $OPENER "$f" > /dev/null 2> /dev/null & done;;
+            esac
+        }}
+
+map <enter> open
+
+
+
+set previewer previewer
+map i $previewer "$f" | less -R
+
+
+
+
