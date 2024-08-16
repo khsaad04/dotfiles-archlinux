@@ -7,7 +7,6 @@ frame_width=0
 height=300
 enable_recursive_icon_lookup = true
 icon_theme = Adwaita
-icon_path = "~/.config/icons"
 markup="full"
 offset="10x10"
 origin="top-right"
