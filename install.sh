@@ -14,7 +14,7 @@ paru -c && paru -Sc --noconfirm
 # Copying dotfiles
 echo "cloning and copying over dotfiles"
 sleep 1
-git clone --depth 1 https://github.com/khsaad04/dotfiles.git /tmp/khsaad-dotfiles
+git clone --depth 1 https://github.com/khsaad04/dotfiles-archlinux.git /tmp/khsaad-dotfiles
 cp -r /tmp/khsaad-dotfiles/.config/* ~/.config
 
 # Switching default shell to fish
