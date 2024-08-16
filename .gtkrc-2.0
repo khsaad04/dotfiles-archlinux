@@ -1,4 +1,4 @@
 gtk-font-name = "Iosevka 10"
-gtk-icon-theme-name = "Papirus"
-gtk-theme-name = "Catppuccin-Mocha-Standard-Blue-Dark"
+gtk-icon-theme-name = "Adwaita"
+gtk-theme-name = "adw-gtk3-dark"
 
