@@ -1,4 +1,4 @@
-#!usr/bin/env bash
+#!/usr/bin/env bash
 amount=$2
 id_output="8052"
 timeout=2000
