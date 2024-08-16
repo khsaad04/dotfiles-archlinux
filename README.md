@@ -1,1 +1,30 @@
-## WIP
+# Installation 
+
+This is for Arch or Arch based linux distros. But you can try this on any distro as long as you can suffice the dependencies.
+
+- ##### Dependencies
+```sh
+swayfx swaybg hyprland waybar wofi wezterm fish starship dunst libnotify ttf-iosevka adw-gtk-theme adwaita-icon-theme
+```
+
+- ##### Optional Dependencies
+```sh
+grimblast # For taking screenshots
+wl-clipboard wl-clip-persist-git # Clipboard daemon
+neovim tree-sitter ripgrep fd unzip npm gcc make lua-jsregexp # For my nvim setup
+lf chafa pistol-bin # For lf tui file manager
+tmux # For tmux obviously
+```
+
+#### First we need to install paru the AUR helper:
+```sh
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+cd
+```
+
+#### Using curl to run the installation script:
+```sh
+curl -s -L https://raw.githubusercontent.com/khsaad04/dotfiles/hyprland/install.sh | bash
+```
