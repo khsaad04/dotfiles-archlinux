@@ -1,9 +1,12 @@
+@import "colors.css";
+
 window#waybar,
 tooltip,
 #workspaces,
 #workspaces button,
 #workspaces button label,
 #mpris,
+#window
 #network,
 #pulseaudio,
 #cpu,
@@ -16,18 +19,21 @@ tooltip,
 }
 
 window#waybar {
-    color: #cdd6f4;
-    background-color: #1e1e2e;
+    background-color: @surface;
+    color: @on_surface;
 }
 
 tooltip {
-    background-color: #1e1e2e;
-    border: 1px solid #89b4fa;
+    font-size: 12;
+    font-weight: bold;
+    background-color: @surface;
+    color: @on_surface;
+    border: 1px solid @outline;
     border-radius: 2px;
 }
 
 #workspaces {
-    background-color: #181825;
+    background-color: @surface_container_highest;
     border-radius: 2px;
     margin: 2px 2px;
 }
@@ -41,27 +47,29 @@ tooltip {
     border: 0;
 }
 
+#workspaces button.active,
+#workspaces button.focused {
+    background-color: @primary_fixed;
+}
+
 #workspaces button label {
-    color: #585b70;
+    color: @primary_fixed;
 }
 
-#workspaces button.active label {
-    color: #cdd6f4;
-}
-
+#workspaces button.active label,
 #workspaces button.focused label {
-    color: #cdd6f4;
+    color: @on_primary_fixed;
 }
 
 #mpris {
-    color: #1e1e2e;
-    font-size: 12px;
+    color: @background;
     margin-top: 2px;
     margin-bottom: 2px;
     padding: 0px 4px;
 }
 
 #mpris.player {
+    font-size: 12px;
     margin-right: 0px;
     margin-left: 2px;
     border-radius: 2px 0 0 2px;
@@ -94,51 +102,19 @@ tooltip {
 }
 
 #window {
+    font-size: 12;
+    font-weight: bold;
     margin: 2px 2px;
 }
 
-#network {
-    color: #cdd6f4;
-    background-color: #181825;
-    border-radius: 2px;
-    margin: 2px 2px;
-    padding: 0px 4px;
-}
-
-#pulseaudio {
-    color: #cdd6f4;
-    background-color: #181825;
-    border-radius: 2px;
-    margin: 2px 2px;
-    padding: 0px 4px;
-}
-
-#cpu {
-    color: #cdd6f4;
-    background-color: #181825;
-    border-radius: 2px;
-    margin: 2px 2px;
-    padding: 0px 4px;
-}
-
-#memory {
-    color: #cdd6f4;
-    background-color: #181825;
-    border-radius: 2px;
-    margin: 2px 2px;
-    padding: 0px 4px;
-}
-
-#clock {
-    color: #cdd6f4;
-    background-color: #181825;
-    border-radius: 2px;
-    margin: 2px 2px;
-    padding: 0px 4px;
-}
-
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#clock,
 #tray {
-    background-color: #181825;
+    color: @primary_fixed;
+    background-color: @surface_container_highest;
     border-radius: 2px;
     margin: 2px 2px;
     padding: 0px 4px;
@@ -147,9 +123,10 @@ tooltip {
 #custom-power {
     font-size: 12px;
     font-weight: 400;
-    color: #89b4fa;
-    background-color: #181825;
+    color: @on_tertiary_container;
+    background-color: @tertiary_container;
     border-radius: 2px;
     margin: 2px 2px;
     padding: 0px 4px;
 }
+

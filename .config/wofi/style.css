@@ -3,14 +3,14 @@
     font-family: Symbols Nerd Font Mono, Iosevka;
     font-size: 16px;
     font-weight: 500;
-    color: #cdd6f4;
+    color: #e4e3d7;
 }
 
 #window {
     margin: 0;
-    background: #181825;
+    background: #13140d;
     border-radius: 8px;
-    border: 2px solid #89b4fa;
+    border: 2px solid #bcce80;
 }
 
 #input {
@@ -38,7 +38,7 @@
 }
 
 #entry:selected {
-    background-color: #313244;
+    background-color: #1f2019;
 }
 
 #text {

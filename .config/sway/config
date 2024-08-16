@@ -86,7 +86,11 @@ pointer_accel 0
 }
 
 output "*" {
-bg ~/Downloads/lake.png fill
+bg ~/.config/wp.png fill
+}
+
+seat "*" {
+xcursor_theme Adwaita 10
 }
 
 mode "resize" {
@@ -107,16 +111,19 @@ gaps inner 2
 gaps outer 2
 exec wl-clipboard &
 
-exec nm-applet &
+exec wl-clip-persist --clipboard regular &
+
+exec nm-applet --indicator &
 
 exec firefox &
 
-exec "dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XCURSOR_THEME XCURSOR_SIZE; systemctl --user start sway-session.target"
+exec autotiling-rs &
+
+exec "dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XCURSOR_THEME XCURSOR_SIZE; systemctl --user reset-failed && swaymsg -mt subscribe '[]' || true"
 corner_radius 8
 blur enable
 default_border none
-
-# Status Bar:
+smart_gaps on
 bar {
-    swaybar_command waybar
+  swaybar_command waybar
 }

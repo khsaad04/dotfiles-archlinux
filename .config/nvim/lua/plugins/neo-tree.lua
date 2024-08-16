@@ -3,7 +3,7 @@ return {
   branch = "v3.x",
   dependencies = {
     "nvim-lua/plenary.nvim",
-    "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+    "nvim-tree/nvim-web-devicons",
     "MunifTanjim/nui.nvim",
   },
   keys = {
@@ -14,4 +14,13 @@ return {
       desc = "[?] Find recently opened files",
     },
   },
+  config = function()
+    require("neo-tree").setup({
+      filesystem = {
+        filtered_items = {
+          visible = true,
+        },
+      },
+    })
+  end,
 }

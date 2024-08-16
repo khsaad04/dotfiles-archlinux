@@ -7,5 +7,5 @@ location=center
 matching=fuzzy
 prompt= Search...
 show=drun
-term=foot
+term=wezterm
 width=450

@@ -1,6 +1,6 @@
 status is-interactive; and begin
     # Aliases
-    alias eza 'eza '\''-F'\'''
+    alias eza 'eza '\''-s'\'' '\''Ext'\'' '\''-F'\'''
     alias l 'ls -la'
     alias la 'eza -a'
     alias ll 'eza -l'
@@ -13,8 +13,6 @@ status is-interactive; and begin
     # Interactive shell initialisation
     set fish_greeting
     fish_vi_key_bindings
-    fish_add_path -aP ~/.cargo/bin
-    starship init fish | source
 
     if test "$TERM" != dumb
         eval (starship init fish)

@@ -2,7 +2,7 @@ return {
   "hrsh7th/nvim-cmp",
   event = "InsertEnter",
   dependencies = {
-    "L3MON4D3/LuaSnip",
+    { "L3MON4D3/LuaSnip", dependencies = "rafamadriz/friendly-snippets" },
     "saadparwaiz1/cmp_luasnip",
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-buffer",
@@ -22,9 +22,6 @@ return {
         expand = function(args)
           luasnip.lsp_expand(args.body)
         end,
-      },
-      window = {
-        completion = cmp.config.window.bordered(),
       },
       mapping = cmp.mapping.preset.insert({
         ["<C-n>"] = cmp.mapping.select_next_item(),
