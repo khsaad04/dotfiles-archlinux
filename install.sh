@@ -3,7 +3,7 @@
 echo "Starting installing packages"
 sleep 1
 
-paru -Syu swayfx swaybg hyprland waybar wofi wezterm fish starship dunst libnotify wireplumber ttf-iosevka nerd-fonts-git adw-gtk-theme adwaita-icon-theme grimblast wl-clipboard wl-clip-persist-git wireplumber --noconfirm --needed && echo "Installing required dependencies complete"
+paru -Syu swayfx swaybg hyprland waybar wofi wezterm fish starship dunst libnotify wireplumber ttf-iosevka nerd-fonts-git adw-gtk-theme adwaita-icon-theme grimblast wl-clipboard wl-clip-persist-git --noconfirm --needed && echo "Installing required dependencies complete"
 sleep 1
 
 echo "Cleaning up"
