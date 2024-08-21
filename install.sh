@@ -1,21 +1,12 @@
 #!/usr/bin/env bash
-# Installing packages
-echo "Starting installing packages"
+
+set -xe
+
+paru -Syu swayfx swaybg hyprland waybar wofi wezterm fish starship dunst libnotify wireplumber ttf-iosevka ttf-nerd-fonts-symbols adw-gtk-theme adwaita-icon-theme grimblast wl-clipboard wl-clip-persist-git --noconfirm --needed
 sleep 1
 
-paru -Syu swayfx swaybg hyprland waybar wofi wezterm fish starship dunst libnotify wireplumber ttf-iosevka ttf-nerd-fonts-symbols adw-gtk-theme adwaita-icon-theme grimblast wl-clipboard wl-clip-persist-git --noconfirm --needed && echo "Installing required dependencies complete"
-sleep 1
-
-# Copying dotfiles
-echo "cloning and copying over dotfiles"
-sleep 1
-
-git clone --depth 1 https://github.com/khsaad04/dotfiles-archlinux.git /tmp/khsaad-dotfiles
+rm -rf /tmp/khsaad-dotfiles;git clone --depth 1 https://github.com/khsaad04/dotfiles-archlinux.git /tmp/khsaad-dotfiles
 cp -r /tmp/khsaad-dotfiles/.config/* ~/.config
-rm -rf /tmp/khsaad-dotfiles
 sleep 1
 
-# Switching default shell to fish
-echo "Changing shell"
-sleep 1
 sudo chsh -s /bin/fish
