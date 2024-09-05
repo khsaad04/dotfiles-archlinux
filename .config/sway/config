@@ -1,7 +1,6 @@
 include /etc/sway/config.d/*
 
 exec wl-clipboard &
-exec wl-clip-persist --clipboard regular &
 exec nm-applet --indicator &
 exec dunst &
 exec firefox &
