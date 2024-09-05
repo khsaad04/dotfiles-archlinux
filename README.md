@@ -9,8 +9,6 @@ swayfx swaybg hyprland waybar wofi wezterm fish starship dunst libnotify wireplu
 
 - ##### Optional Dependencies
 ```sh
-grimblast # For taking screenshots
-wl-clipboard wl-clip-persist-git # Clipboard daemon
 neovim tree-sitter ripgrep fd unzip npm gcc make lua-jsregexp # For my nvim setup
 lf chafa pistol-bin # For lf tui file manager
 tmux # For tmux obviously
