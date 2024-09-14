@@ -1,46 +1,27 @@
 * {
-    all: initial;
-    font-family: Symbols Nerd Font Mono, Iosevka;
-    font-size: 16px;
-    font-weight: 500;
-    color: #e4e3d7;
+  all: initial;
+  font-family: Iosevka, Symbols Nerd Font;
+  font-size: 16px;
+  color: @on_surface;
+  border-radius: 8px;
+  margin: 2px;
+  padding: 2px;
+  border: 0px;
 }
 
 #window {
-    margin: 0;
-    background: #13140d;
-    border-radius: 8px;
-    border: 2px solid #bcce80;
+  margin: 0;
+  background: @surface;
+  border: 2px solid @primary;
 }
 
 #input {
-    border: 0;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-}
-
-#input:focus {
-    border: 0;
-}
-
-#outer-box {
-    padding: 10px;
-}
-
-#img {
-    margin-right: 6px;
-}
-
-#entry {
-    padding: 10px;
-    border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  background: @surface_container;
 }
 
 #entry:selected {
-    background-color: #1f2019;
-}
-
-#text {
-    margin: 2px;
+  background-color: @surface_container;
+  color: @primary;
 }

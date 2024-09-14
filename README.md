@@ -4,14 +4,7 @@ This is for Arch or Arch based linux distros. But you can try this on any distro
 
 - ##### Dependencies
 ```sh
-swayfx swaybg hyprland waybar wofi wezterm fish starship dunst libnotify wireplumber ttf-iosevka ttf-nerd-fonts-symbols adw-gtk-theme adwaita-icon-theme
-```
-
-- ##### Optional Dependencies
-```sh
-neovim tree-sitter ripgrep fd unzip npm gcc make lua-jsregexp # For my nvim setup
-lf chafa pistol-bin # For lf tui file manager
-tmux # For tmux obviously
+swayfx swaybg hyprland waybar wofi kitty fish starship dunst libnotify wireplumber ttf-iosevka ttf-nerd-fonts-symbols adw-gtk-theme adwaita-icon-theme
 ```
 
 #### First we need to install paru the AUR helper:

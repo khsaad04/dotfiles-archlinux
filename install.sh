@@ -2,7 +2,7 @@
 
 set -xe
 
-dependencies="swayfx hyprland swaybg waybar wofi wezterm fish starship dunst libnotify wireplumber ttf-iosevka ttf-nerd-fonts-symbols adw-gtk-theme adwaita-icon-theme grimblast wl-clipboard"
+dependencies="swayfx hyprland swaybg waybar wofi kitty fish starship dunst libnotify wireplumber ttf-iosevka ttf-nerd-fonts-symbols adw-gtk-theme adwaita-icon-theme grimblast wl-clipboard"
 
 paru -Syu $dependencies --noconfirm --needed
 sleep 1
