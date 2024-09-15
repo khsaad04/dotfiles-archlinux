@@ -28,7 +28,7 @@
     "custom/power": {
         "format": "󰣇",
         "justify": "center",
-        "on-click": "powermenu",
+        "on-click": "$HOME/.config/scripts/powermenu",
         "tooltip": false
     },
     "hyprland/workspaces": {
@@ -100,9 +100,9 @@
       },
       "format-muted": "󰝟 muted",
       "justify": "center",
-      "on-click": "changevolume mute",
-      "on-scroll-down": "changevolume down 5",
-      "on-scroll-up": "changevolume up 5",
+      "on-click": "$HOME/.config/scripts/changevolume mute",
+      "on-scroll-down": "$HOME/.config/scripts/changevolume down 5",
+      "on-scroll-up": "$HOME/.config/scripts/changevolume up 5",
       "tooltip": false
     },
     "cpu": {

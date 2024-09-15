@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
+set -xe
+
 path=$1
 kitty_path=$HOME/.config/kitty/kitty.conf
 
 matugen image $path
 swaybg -i $path
-gen-base16 $path $kitty_path
+$HOME/.config/scripts/gen-base16 $path $kitty_path
 
 # Reload
 pkill waybar;waybar
