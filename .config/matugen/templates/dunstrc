@@ -1,0 +1,27 @@
+[global]
+corner_radius=8
+font="Iosevka 10"
+format="<b>%a</b>\n%s <i>%b</i>"
+frame_color="{{colors.outline.default.hex}}"
+frame_width=0
+enable_recursive_icon_lookup = true
+icon_theme = Adwaita
+markup="full"
+offset="10x10"
+
+[urgency_low]
+background="{{colors.surface_container_highest.default.hex}}"
+foreground="{{colors.primary.default.hex}}"
+highlight="{{colors.primary.default.hex}}"
+timeout=10
+
+[urgency_normal]
+background="{{colors.surface_container_highest.default.hex}}"
+foreground="{{colors.primary.default.hex}}"
+highlight="{{colors.primary.default.hex}}"
+timeout=10
+
+[urgency_critical]
+background="{{colors.error.default.hex}}"
+foreground="{{colors.on_error.default.hex}}"
+timeout=0

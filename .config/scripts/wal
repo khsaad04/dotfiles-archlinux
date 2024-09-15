@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+path=$1
+kitty_path=$HOME/.config/kitty/kitty.conf
+
+matugen image $path
+swaybg -i $path
+gen-base16 $path $kitty_path
+
+# Reload
+pkill waybar;waybar
+killall dunst
+rm -rf ~/.cache/nvim
