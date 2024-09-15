@@ -3,12 +3,12 @@ reload_apps = false
 set_wallpaper = false
 
 [templates.waybar]
-input_path = "~/.config/matugen/templates/colors.css"
+input_path = "~/.config/matugen/templates/waybar-colors.css"
 output_path = "~/.config/waybar/colors.css"
 
 [templates.wofi]
-input_path = "~/.config/matugen/templates/colors.css"
-output_path = "~/.config/wofi/colors.css"
+input_path = "~/.config/matugen/templates/wofi-style.css"
+output_path = "~/.config/wofi/style.css"
 
 [templates.dunst]
 input_path = "~/.config/matugen/templates/dunstrc"
@@ -29,3 +29,7 @@ output_path = "~/.config/kitty/kitty.conf"
 [templates.nvim]
 input_path = "~/.config/matugen/templates/nvim-colors.lua"
 output_path = "~/.config/nvim/lua/plugins/colorscheme.lua"
+
+[templates.starship]
+input_path = "~/.config/matugen/templates/starship.toml"
+output_path = "~/.config/starship.toml"

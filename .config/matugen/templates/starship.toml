@@ -1,0 +1,29 @@
+format = "[](fg:{{colors.primary.default.hex}})$username[](fg:{{colors.primary.default.hex}} bg:{{colors.primary_container.default.hex}})$directory[](fg:{{colors.primary_container.default.hex}})$all$cmd_duration\n$character"
+[character]
+error_symbol = "[❯](bold {{colors.primary.default.hex}})"
+success_symbol = "[❯](bold {{colors.error.default.hex}})"
+
+[cmd_duration]
+format = " took [$duration]($style)"
+
+[directory]
+format = "[[ $path]($style)[$read_only]($read_only_style)](bg:surface1)"
+read_only_style = "bold fg:{{colors.on_primary_container.default.hex}} bg:{{colors.primary_container.default.hex}}"
+style = "bold fg:{{colors.on_primary_container.default.hex}} bg:{{colors.primary_container.default.hex}}"
+
+[git_branch]
+format = " [$symbol$branch(:$remote_branch)]($style) "
+style = "bold {{colors.on_primary_container.default.hex}}"
+symbol = " "
+
+[line_break]
+disabled = true
+
+[python]
+symbol = " "
+
+[username]
+format = "[$user]($style)"
+show_always = true
+style_root = "bold fg:{{colors.on_primary.default.hex}} bg:{{colors.primary.default.hex}}"
+style_user = "bold fg:{{colors.on_primary.default.hex}} bg:{{colors.primary.default.hex}}"
