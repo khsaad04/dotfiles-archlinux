@@ -2,32 +2,30 @@
 reload_apps = false
 set_wallpaper = false
 
-[templates]
-waybar = {
-  input_path = "~/.config/matugen/templates/colors.css",
-  output_path = "~/.config/waybar/colors.css"
-}
-wofi = {
-  input_path = "~/.config/matugen/templates/colors.css",
-  output_path = "~/.config/wofi/colors.css"
-}
-dunst = {
-  input_path = "~/.config/matugen/templates/dunstrc",
-  output_path = "~/.config/dunst/dunstrc"
-}
-gtk3 = {
-  input_path = "~/.config/matugen/templates/gtk.css",
-  output_path = "~/.config/gtk-3.0/gtk.css"
-} 
-gtk4 = {
-  input_path = "~/.config/matugen/templates/gtk.css",
-  output_path = "~/.config/gtk-4.0/gtk.css"
-} 
-kitty = {
-  input_path = "~/.config/matugen/templates/kitty.conf",
-  output_path = "~/.config/kitty/kitty.conf"
-}
-nvim = {
-  input_path = "~/.config/matugen/templates/nvim-colors.lua",
-  output_path = "~/.config/nvim/lua/plugins/colorscheme.lua"
-}
+[templates.waybar]
+input_path = "~/.config/matugen/templates/colors.css"
+output_path = "~/.config/waybar/colors.css"
+
+[templates.wofi]
+input_path = "~/.config/matugen/templates/colors.css"
+output_path = "~/.config/wofi/colors.css"
+
+[templates.dunst]
+input_path = "~/.config/matugen/templates/dunstrc"
+output_path = "~/.config/dunst/dunstrc"
+
+[templates.gtk3]
+input_path = "~/.config/matugen/templates/gtk.css"
+output_path = "~/.config/gtk-3.0/gtk.css"
+
+[templates.gtk4]
+input_path = "~/.config/matugen/templates/gtk.css"
+output_path = "~/.config/gtk-4.0/gtk.css"
+
+[templates.kitty]
+input_path = "~/.config/matugen/templates/kitty.conf"
+output_path = "~/.config/kitty/kitty.conf"
+
+[templates.nvim]
+input_path = "~/.config/matugen/templates/nvim-colors.lua"
+output_path = "~/.config/nvim/lua/plugins/colorscheme.lua"
