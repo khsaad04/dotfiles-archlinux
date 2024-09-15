@@ -9,7 +9,7 @@ sleep 1
 
 rm -rf /tmp/khsaad-dotfiles || true
 sleep 1
-git clone --depth 1 https://github.com/khsaad04/dotfiles-archlinux.git /tmp/khsaad-dotfiles
+git clone -b breakpoint --depth 1 https://github.com/khsaad04/dotfiles-archlinux.git /tmp/khsaad-dotfiles
 cp -r /tmp/khsaad-dotfiles/.config/* ~/.config
 sleep 1
 
