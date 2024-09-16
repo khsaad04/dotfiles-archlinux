@@ -4,7 +4,7 @@ set -xe
 
 dependencies="hyprland swaybg waybar matugen-bin wofi kitty fish starship dunst libnotify wireplumber ttf-iosevka ttf-nerd-fonts-symbols adw-gtk-theme adwaita-icon-theme grimblast wl-clipboard"
 
-yay -Syu $dependencies --noconfirm --needed
+paru -Syu $dependencies --noconfirm --needed
 sleep 1
 
 rm -rf /tmp/khsaad-dotfiles || true
