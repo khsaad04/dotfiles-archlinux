@@ -7,9 +7,9 @@ kitty_path=$HOME/.config/kitty/kitty.conf
 
 matugen image $path
 swaybg -i $path
-$HOME/.config/scripts/gen-base16 $path $kitty_path
+$HOME/.config/scripts/base16-gen $path $kitty_path
 
 # Reload
 pkill waybar;waybar
 killall dunst
-rm -rf ~/.cache/nvim
+rm -rf $HOME/.cache/nvim
