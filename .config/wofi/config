@@ -2,6 +2,5 @@ allow_markup=true
 height=300
 insensitive=true
 location=center
-matching=fuzzy
 prompt=Search...
 width=400
