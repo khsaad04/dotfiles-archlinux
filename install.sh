@@ -13,4 +13,4 @@ git clone --depth 1 https://github.com/khsaad04/dotfiles-archlinux.git /tmp/khsa
 cp -r /tmp/khsaad-dotfiles/.config/* ~/.config
 sleep 1
 
-sudo chsh -s $(which fish)
+chsh -s $(which fish)
