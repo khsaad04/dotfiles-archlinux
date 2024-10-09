@@ -11,11 +11,13 @@ tooltip,
 #cpu,
 #memory,
 #clock,
-#custom-power {
+#custom-power,
+#custom-launcher {
   all: initial;
   font-family:
     Iosevka,
-    Symbols Nerd Font;
+    Symbols Nerd Font,
+    Noto Sans Bengali;
   font-size: 10px;
 }
 
@@ -124,9 +126,20 @@ tooltip {
 #custom-power {
   font-size: 12px;
   font-weight: 400;
+  color: @error;
+  background-color: @surface_container_highest;
+  border-radius: 2px;
+  margin: 3px 3px;
+  padding: 0px 3px;
+}
+
+#custom-launcher {
+  font-size: 12px;
+  font-weight: 400;
   color: @on_tertiary_container;
   background-color: @tertiary_container;
   border-radius: 2px;
   margin: 3px 3px;
   padding: 0px 3px;
 }
+
