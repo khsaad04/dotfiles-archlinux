@@ -5,8 +5,8 @@ set -xe
 path=$1
 kitty_path=$HOME/.config/kitty/kitty.conf
 
-matugen image $path
-swaybg -i $path
+~/.cargo/bin/matugen image $path
+swaybg -i $path --mode fill
 $HOME/.config/scripts/base16-gen $path $kitty_path
 
 # Reload

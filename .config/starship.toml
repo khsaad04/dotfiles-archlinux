@@ -1,0 +1,29 @@
+format = "[](fg:#c2cd7c)$username[](fg:#c2cd7c bg:#434b06)$directory[](fg:#434b06)$all$cmd_duration\n$character"
+[character]
+error_symbol = "[❯](bold #ffb4ab)"
+success_symbol = "[❯](bold #c2cd7c)"
+
+[cmd_duration]
+format = " took [$duration]($style)"
+
+[directory]
+format = "[[ $path]($style)[$read_only]($read_only_style)](bg:surface1)"
+read_only_style = "bold fg:#dfe995 bg:#434b06"
+style = "bold fg:#dfe995 bg:#434b06"
+
+[git_branch]
+format = " [$symbol$branch(:$remote_branch)]($style) "
+style = "bold #dfe995"
+symbol = " "
+
+[line_break]
+disabled = true
+
+[python]
+symbol = " "
+
+[username]
+format = "[$user]($style)"
+show_always = true
+style_root = "bold fg:#2d3400 bg:#c2cd7c"
+style_user = "bold fg:#2d3400 bg:#c2cd7c"
