@@ -3,9 +3,9 @@ exec wl-clip-persist --clipboard regular &
 exec nm-applet --indicator &
 exec dunst &
 exec firefox &
-exec $HOME/.config/scripts/wal ~/.config/wp.jpg &
+exec_always $HOME/.config/scripts/wal ~/.config/wp.jpg &
 
-font pango:Iosevka 10 
+font Iosevka 8 
 
 ### Variables
 set $mod Mod4
