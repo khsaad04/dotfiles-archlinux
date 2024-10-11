@@ -1,7 +1,7 @@
 format = "[](fg:{{colors.primary.default.hex}})$username[](fg:{{colors.primary.default.hex}} bg:{{colors.primary_container.default.hex}})$directory[](fg:{{colors.primary_container.default.hex}})$all$cmd_duration\n$character"
 [character]
-error_symbol = "[❯](bold {{colors.primary.default.hex}})"
-success_symbol = "[❯](bold {{colors.error.default.hex}})"
+success_symbol = "[❯](bold {{colors.primary.default.hex}})"
+error_symbol = "[❯](bold {{colors.error.default.hex}})"
 
 [cmd_duration]
 format = " took [$duration]($style)"
