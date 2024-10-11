@@ -5,7 +5,7 @@ exec dunst &
 exec firefox &
 exec_always $HOME/.config/scripts/wal ~/.config/wp.jpg &
 
-font Iosevka 8 
+font pango:Iosevka 8 
 
 ### Variables
 set $mod Mod4
@@ -55,9 +55,10 @@ seat "*" {
     bindsym $mod+Return exec $term
     bindsym $mod+q kill
     bindsym $mod+space exec $menu
+    bindsym $mod+d exec tofi-run | xargs -r kitty --
     floating_modifier $mod normal
     bindsym $mod+Shift+c reload
-    bindsym $mod+x exec $HOME/.config/scripts/powermenu
+    bindsym $mod+x exec powermenu
 #
 # Moving around:
 #

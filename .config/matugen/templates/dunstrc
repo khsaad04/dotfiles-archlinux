@@ -8,6 +8,7 @@ enable_recursive_icon_lookup = true
 icon_theme = Adwaita
 markup="full"
 offset="10x10"
+origin="bottom-right"
 
 [urgency_low]
 background="{{colors.surface_container_highest.default.hex}}"
