@@ -3,6 +3,7 @@ exec wl-clip-persist --clipboard regular &
 exec nm-applet --indicator &
 exec dunst &
 exec firefox &
+exec_always $HOME/.config/scripts/wal ~/.config/wp.jpg &
 
 font pango:Iosevka 10 
 
@@ -19,13 +20,13 @@ set $menu tofi-drun --terminal=footclient | xargs -r swaymsg exec --
 
 ### Appearance
 # class                   border      background  text        indicator   child_border
-client.background                     #13140c 
-client.focused            #13140c     #35352d     #c5cd7a     #13140c     #13140c
-client.focused_inactive   #13140c     #35352d     #c5cd7a     #13140c     #13140c
-client.focused_tab_title  #13140c     #35352d     #c5cd7a
-client.unfocused          #13140c     #13140c     #e5e3d6     #13140c     #13140c
-client.urgent             #13140c     #13140c     #ffb4ab     #13140c     #13140c
-client.placeholder        #13140c     #13140c     #ffb4ab     #13140c     #13140c
+client.background                     #{{surface}} 
+client.focused            #{{surface}}     #{{surface_container_highest}}     #{{primary}}     #{{surface}}     #{{surface}}
+client.focused_inactive   #{{surface}}     #{{surface_container_highest}}     #{{primary}}     #{{surface}}     #{{surface}}
+client.focused_tab_title  #{{surface}}     #{{surface_container_highest}}     #{{primary}}
+client.unfocused          #{{surface}}     #{{surface}}     #{{on_surface}}     #{{surface}}     #{{surface}}
+client.urgent             #{{surface}}     #{{surface}}     #{{error}}     #{{surface}}     #{{surface}}
+client.placeholder        #{{surface}}     #{{surface}}     #{{error}}     #{{surface}}     #{{surface}}
 
 # corner_radius 8
 gaps inner 2
@@ -37,9 +38,6 @@ smart_gaps on
 
 ### Assign
 assign [app_id="firefox"] 2
-
-### Output configuration
-output * bg ~/.config/wp.jpg fill
 
 ### Input configuration
 input "type:pointer" {
@@ -165,3 +163,4 @@ bindsym $mod+r mode "resize"
 #
 bar {
   swaybar_command waybar
+}

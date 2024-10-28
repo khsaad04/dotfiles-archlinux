@@ -1,0 +1,20 @@
+[config]
+wallpaper = ".config/wp.jpg"
+
+[priority_files]
+config = {target=".config", dest="Programming/dotfiles-archlinux/dummy"}
+
+[files]
+firefox    = {target=".mozilla",                                 dest="Programming/dotfiles-archlinux/dummy"                                           }
+dunst      = {target=".config/dunst/dunstrc",                    dest="Programming/dotfiles-archlinux/dummy", template="templates/dunstrc"             }
+foot       = {target=".config/foot/foot.ini",                    dest="Programming/dotfiles-archlinux/dummy", template="templates/foot.ini"            }
+gtk3css    = {target=".config/gtk-3.0/gtk.css",                  dest="Programming/dotfiles-archlinux/dummy", template="templates/gtk.css"             }
+gtk4css    = {target=".config/gtk-4.0/gtk.css",                  dest="Programming/dotfiles-archlinux/dummy", template="templates/gtk.css"             }
+nvim       = {target=".config/nvim/lua/plugins/colorscheme.lua", dest="Programming/dotfiles-archlinux/dummy", template="templates/nvim-colorscheme.lua"}
+quickshell = {target=".config/quickshell/Colors.qml",            dest="Programming/dotfiles-archlinux/dummy", template="templates/qs-Colors.qml"       }
+sway       = {target=".config/sway/config",                      dest="Programming/dotfiles-archlinux/dummy", template="templates/sway-config"         }
+tmux       = {target=".config/tmux/tmux.conf",                   dest="Programming/dotfiles-archlinux/dummy", template="templates/tmux.conf"           }
+tofi       = {target=".config/tofi/config",                      dest="Programming/dotfiles-archlinux/dummy", template="templates/tofi-config"         }
+waybar     = {target=".config/waybar/colors.css",                dest="Programming/dotfiles-archlinux/dummy", template="templates/waybar-colors.css"   }
+wofi       = {target=".config/wofi/style.css",                   dest="Programming/dotfiles-archlinux/dummy", template="templates/wofi-style.css"      }
+starship   = {target=".config/starship.toml",                    dest="Programming/dotfiles-archlinux/dummy", template="templates/starship.toml"       }

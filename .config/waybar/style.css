@@ -1,5 +1,4 @@
 @import "colors.css";
-
 window#waybar,
 tooltip,
 #workspaces,
@@ -38,14 +37,14 @@ tooltip {
 #workspaces {
   background-color: @surface_container_highest;
   border-radius: 2px;
-  margin: 3px 3px;
+  margin: 2px 2px;
 }
 
 #workspaces button {
   background: transparent;
   border-radius: 2px;
   padding: 0px 3px;
-  margin: 3px 3px;
+  margin: 2px 2px;
   transition: all 0.3s ease;
   border: 0;
 }
@@ -107,7 +106,7 @@ tooltip {
 #window {
   font-size: 12;
   font-weight: bold;
-  margin: 3px 3px;
+  margin: 2px 2px;
 }
 
 #network,
@@ -119,7 +118,7 @@ tooltip {
   color: @primary_fixed;
   background-color: @surface_container_highest;
   border-radius: 2px;
-  margin: 3px 3px;
+  margin: 2px 2px;
   padding: 0px 3px;
 }
 
@@ -129,7 +128,7 @@ tooltip {
   color: @error;
   background-color: @surface_container_highest;
   border-radius: 2px;
-  margin: 3px 3px;
+  margin: 2px 2px;
   padding: 0px 3px;
 }
 
@@ -139,7 +138,7 @@ tooltip {
   color: @on_tertiary_container;
   background-color: @tertiary_container;
   border-radius: 2px;
-  margin: 3px 3px;
+  margin: 2px 2px;
   padding: 0px 3px;
 }
 
