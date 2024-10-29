@@ -1,0 +1,1 @@
+/home/khsaad/Programming/dotfiles-archlinux/.config/nvim/init.lua

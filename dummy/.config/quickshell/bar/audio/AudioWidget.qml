@@ -1,0 +1,1 @@
+/home/khsaad/Programming/dotfiles-archlinux/.config/quickshell/bar/audio/AudioWidget.qml
