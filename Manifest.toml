@@ -1,10 +1,8 @@
 [config]
 wallpaper = ".config/wp.jpg"
 
-[priority_files]
-config = {target=".config", dest="Programming/dotfiles-archlinux/dummy"}
-
 [files]
+config = {target=".config", dest="Programming/dotfiles-archlinux/dummy"}
 firefox    = {target=".mozilla",                                 dest="Programming/dotfiles-archlinux/dummy"                                           }
 dunst      = {target=".config/dunst/dunstrc",                    dest="Programming/dotfiles-archlinux/dummy", template="templates/dunstrc"             }
 foot       = {target=".config/foot/foot.ini",                    dest="Programming/dotfiles-archlinux/dummy", template="templates/foot.ini"            }

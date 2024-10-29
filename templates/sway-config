@@ -3,7 +3,6 @@ exec wl-clip-persist --clipboard regular &
 exec nm-applet --indicator &
 exec dunst &
 exec firefox &
-exec_always $HOME/.config/scripts/wal ~/.config/wp.jpg &
 
 font pango:Iosevka 10 
 
@@ -38,6 +37,9 @@ smart_gaps on
 
 ### Assign
 assign [app_id="firefox"] 2
+
+### Output configuration
+output * bg ~/.config/wp.jpg fill
 
 ### Input configuration
 input "type:pointer" {
