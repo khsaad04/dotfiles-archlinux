@@ -1,1 +1,0 @@
-/home/khsaad/Programming/dotfiles-archlinux/.config/quickshell/bar/workspaces/WorkspacesWidget.qml

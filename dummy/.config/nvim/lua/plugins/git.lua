@@ -1,1 +1,0 @@
-/home/khsaad/Programming/dotfiles-archlinux/.config/nvim/lua/plugins/git.lua
