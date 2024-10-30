@@ -1,8 +1,13 @@
+exec "dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE NIXOS_OZONE_WL XCURSOR_THEME XCURSOR_SIZE; systemctl --user reset-failed && swaymsg -mt subscribe '[]' || true"
+
 exec wl-clipboard &
 exec wl-clip-persist --clipboard regular &
 exec nm-applet --indicator &
 exec dunst &
 exec firefox &
+exec foot --server &
+exec fcitx5 &
+exec udiskie &
 
 font pango:Iosevka 10 
 
