@@ -1,13 +1,18 @@
-exec "dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE NIXOS_OZONE_WL XCURSOR_THEME XCURSOR_SIZE; systemctl --user reset-failed && swaymsg -mt subscribe '[]' || true"
+include /etc/sway/config.d/*
 
-exec wl-clipboard &
-exec wl-clip-persist --clipboard regular &
-exec nm-applet --indicator &
-exec dunst &
+### Exec stuff
+# Status Bar:
+bar {
+  swaybar_command waybar
+}
 exec firefox &
 exec foot --server &
+exec nm-applet --indicator &
+exec dunst &
+exec wl-clipboard &
+exec wl-clip-persist --clipboard regular &
 
-font pango:Iosevka 10 
+font pango:Iosevka 8 
 
 ### Variables
 set $mod Mod4
@@ -162,10 +167,3 @@ bindsym $mod+r mode "resize"
     bindsym XF86AudioRaiseVolume exec $HOME/.config/scripts/changevolume up 5
     bindsym XF86AudioLowerVolume exec $HOME/.config/scripts/changevolume down 5
     bindsym XF86AudioMute exec $HOME/.config/scripts/changevolume mute
-
-#
-# Status Bar:
-#
-bar {
-  swaybar_command waybar
-}
