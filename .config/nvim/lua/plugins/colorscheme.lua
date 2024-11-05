@@ -8,7 +8,7 @@ return {
             require("gruvbox").setup({
                 contrast = "hard",
                 palette_overrides = {
-                    dark0_hard = "#13140c",
+                    dark0_hard = "#121318",
                 },
             })
 
@@ -16,39 +16,39 @@ return {
             custom_gruvbox = {
                 normal = {
                     a = {
-                        bg = "#c5cd7a",
-                        fg = "#2f3300",
+                        bg = "#b2c5ff",
+                        fg = "#182e60",
                         gui = "bold",
                     },
                     b = {
-                        bg = "#2a2a22",
-                        fg = "#e5e3d6",
+                        bg = "#282a2f",
+                        fg = "#e3e2e9",
                     },
-                    c = { bg = "#202018", fg = "#e5e3d6" },
+                    c = { bg = "#1e1f25", fg = "#e3e2e9" },
                 },
                 insert = {
                     a = {
-                        bg = "#a2d0c1",
-                        fg = "#07372d",
+                        bg = "#e1bbdc",
+                        fg = "#422741",
                         gui = "bold",
                     },
                     b = {
-                        bg = "#2a2a22",
-                        fg = "#e5e3d6",
+                        bg = "#282a2f",
+                        fg = "#e3e2e9",
                     },
-                    c = { bg = "#202018", fg = "#e5e3d6" },
+                    c = { bg = "#1e1f25", fg = "#e3e2e9" },
                 },
                 visual = {
                     a = {
-                        bg = "#c7c9a6",
-                        fg = "#30321a",
+                        bg = "#c0c6dd",
+                        fg = "#2a3042",
                         gui = "bold",
                     },
                     b = {
-                        bg = "#2a2a22",
-                        fg = "#e5e3d6",
+                        bg = "#282a2f",
+                        fg = "#e3e2e9",
                     },
-                    c = { bg = "#202018", fg = "#e5e3d6" },
+                    c = { bg = "#1e1f25", fg = "#e3e2e9" },
                 },
                 replace = {
                     a = {
@@ -57,38 +57,38 @@ return {
                         gui = "bold",
                     },
                     b = {
-                        bg = "#2a2a22",
-                        fg = "#e5e3d6",
+                        bg = "#282a2f",
+                        fg = "#e3e2e9",
                     },
-                    c = { bg = "#202018", fg = "#e5e3d6" },
+                    c = { bg = "#1e1f25", fg = "#e3e2e9" },
                 },
                 command = {
                     a = {
-                        bg = "#c5cd7a",
-                        fg = "#2f3300",
+                        bg = "#b2c5ff",
+                        fg = "#182e60",
                         gui = "bold",
                     },
                     b = {
-                        bg = "#2a2a22",
-                        fg = "#e5e3d6",
+                        bg = "#282a2f",
+                        fg = "#e3e2e9",
                     },
-                    c = { bg = "#202018", fg = "#e5e3d6" },
+                    c = { bg = "#1e1f25", fg = "#e3e2e9" },
                 },
                 inactive = {
                     a = {
-                        bg = "#2a2a22",
-                        fg = "#e5e3d6",
+                        bg = "#282a2f",
+                        fg = "#e3e2e9",
                         gui = "bold",
                     },
                     b = {
-                        bg = "#2a2a22",
-                        fg = "#e5e3d6",
+                        bg = "#282a2f",
+                        fg = "#e3e2e9",
                     },
-                    c = { bg = "#202018", fg = "#e5e3d6" },
+                    c = { bg = "#1e1f25", fg = "#e3e2e9" },
                 },
             }
-            custom_gruvbox.normal.c.bg = "#202018"
-            custom_gruvbox.normal.c.fg = "#e5e3d6"
+            custom_gruvbox.normal.c.bg = "#1e1f25"
+            custom_gruvbox.normal.c.fg = "#e3e2e9"
 
             require("lualine").setup({
                 options = { theme = custom_gruvbox },

@@ -3,6 +3,9 @@ status is-interactive; and begin
     alias l 'ls -lah'
     alias t 'tmux attach || tmux new-session -s main tms'
     alias y yazi
+    alias vi nvim
+    alias vim nvim
+    alias vimdiff "nvim -d"
 
     # Interactive shell initialisation
     set fish_greeting

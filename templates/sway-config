@@ -49,7 +49,7 @@ smart_gaps on
 assign [app_id="firefox"] 2
 
 ### Output configuration
-output * bg ~/.config/wp.jpg fill
+output * bg ~/.config/wallpapers/bliss512.jpg fill
 
 ### Input configuration
 input "type:pointer" {

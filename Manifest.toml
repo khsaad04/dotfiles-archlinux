@@ -1,5 +1,5 @@
 [config]
-wallpaper = ".config/wp.jpg"
+wallpaper = ".config/wallpapers/bliss512.jpg"
 
 [files]
 config     = {target=".config"                                                                            }

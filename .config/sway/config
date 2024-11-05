@@ -28,13 +28,13 @@ set {
 
 ### Appearance
 # class                   border      background  text        indicator   child_border
-client.background                     #13140c 
-client.focused            #13140c     #35352d     #c5cd7a     #13140c     #13140c
-client.focused_inactive   #13140c     #35352d     #c5cd7a     #13140c     #13140c
-client.focused_tab_title  #13140c     #35352d     #c5cd7a
-client.unfocused          #13140c     #13140c     #e5e3d6     #13140c     #13140c
-client.urgent             #13140c     #13140c     #ffb4ab     #13140c     #13140c
-client.placeholder        #13140c     #13140c     #ffb4ab     #13140c     #13140c
+client.background                     #121318 
+client.focused            #121318     #33343a     #b2c5ff     #121318     #121318
+client.focused_inactive   #121318     #33343a     #b2c5ff     #121318     #121318
+client.focused_tab_title  #121318     #33343a     #b2c5ff
+client.unfocused          #121318     #121318     #e3e2e9     #121318     #121318
+client.urgent             #121318     #121318     #ffb4ab     #121318     #121318
+client.placeholder        #121318     #121318     #ffb4ab     #121318     #121318
 
 font pango:Iosevka 8 
 gaps {
@@ -49,7 +49,7 @@ smart_gaps on
 assign [app_id="firefox"] 2
 
 ### Output configuration
-output * bg ~/.config/wp.jpg fill
+output * bg ~/.config/wallpapers/bliss512.jpg fill
 
 ### Input configuration
 input "type:pointer" {
