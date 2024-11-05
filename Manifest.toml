@@ -4,6 +4,8 @@ wallpaper = ".config/wp.jpg"
 [files]
 config     = {target=".config"                                                                                            }
 firefox    = {target=".mozilla"                                                                                           }
+xresources = {target=".Xresources"                                                                                        }
+xinitrc    = {target=".xinitrc"                                                                                           }
 dunst      = {target=".config/dunst/dunstrc",                    dest=".config", template="templates/dunstrc"             }
 foot       = {target=".config/foot/foot.ini",                    dest=".config", template="templates/foot.ini"            }
 gtk3css    = {target=".config/gtk-3.0/gtk.css",                  dest=".config", template="templates/gtk.css"             }
