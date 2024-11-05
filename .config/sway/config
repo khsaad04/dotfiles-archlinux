@@ -32,7 +32,7 @@ client.background                     #121318
 client.focused            #121318     #33343a     #b2c5ff     #121318     #121318
 client.focused_inactive   #121318     #33343a     #b2c5ff     #121318     #121318
 client.focused_tab_title  #121318     #33343a     #b2c5ff
-client.unfocused          #121318     #121318     #e3e2e9     #121318     #121318
+client.unfocused          #121318     #121318     #e2e2e9     #121318     #121318
 client.urgent             #121318     #121318     #ffb4ab     #121318     #121318
 client.placeholder        #121318     #121318     #ffb4ab     #121318     #121318
 
@@ -49,7 +49,7 @@ smart_gaps on
 assign [app_id="firefox"] 2
 
 ### Output configuration
-output * bg ~/.config/wallpapers/bliss512.jpg fill
+output * bg /home/khsaad/Programming/dotfiles-archlinux/.config/wallpapers/bliss.jpg fill
 
 ### Input configuration
 input "type:pointer" {

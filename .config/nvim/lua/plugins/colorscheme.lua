@@ -17,26 +17,26 @@ return {
                 normal = {
                     a = {
                         bg = "#b2c5ff",
-                        fg = "#182e60",
+                        fg = "#172e60",
                         gui = "bold",
                     },
                     b = {
                         bg = "#282a2f",
-                        fg = "#e3e2e9",
+                        fg = "#e2e2e9",
                     },
-                    c = { bg = "#1e1f25", fg = "#e3e2e9" },
+                    c = { bg = "#1e1f25", fg = "#e2e2e9" },
                 },
                 insert = {
                     a = {
-                        bg = "#e1bbdc",
-                        fg = "#422741",
+                        bg = "#e1bbdd",
+                        fg = "#412742",
                         gui = "bold",
                     },
                     b = {
                         bg = "#282a2f",
-                        fg = "#e3e2e9",
+                        fg = "#e2e2e9",
                     },
-                    c = { bg = "#1e1f25", fg = "#e3e2e9" },
+                    c = { bg = "#1e1f25", fg = "#e2e2e9" },
                 },
                 visual = {
                     a = {
@@ -46,9 +46,9 @@ return {
                     },
                     b = {
                         bg = "#282a2f",
-                        fg = "#e3e2e9",
+                        fg = "#e2e2e9",
                     },
-                    c = { bg = "#1e1f25", fg = "#e3e2e9" },
+                    c = { bg = "#1e1f25", fg = "#e2e2e9" },
                 },
                 replace = {
                     a = {
@@ -58,37 +58,37 @@ return {
                     },
                     b = {
                         bg = "#282a2f",
-                        fg = "#e3e2e9",
+                        fg = "#e2e2e9",
                     },
-                    c = { bg = "#1e1f25", fg = "#e3e2e9" },
+                    c = { bg = "#1e1f25", fg = "#e2e2e9" },
                 },
                 command = {
                     a = {
                         bg = "#b2c5ff",
-                        fg = "#182e60",
+                        fg = "#172e60",
                         gui = "bold",
                     },
                     b = {
                         bg = "#282a2f",
-                        fg = "#e3e2e9",
+                        fg = "#e2e2e9",
                     },
-                    c = { bg = "#1e1f25", fg = "#e3e2e9" },
+                    c = { bg = "#1e1f25", fg = "#e2e2e9" },
                 },
                 inactive = {
                     a = {
                         bg = "#282a2f",
-                        fg = "#e3e2e9",
+                        fg = "#e2e2e9",
                         gui = "bold",
                     },
                     b = {
                         bg = "#282a2f",
-                        fg = "#e3e2e9",
+                        fg = "#e2e2e9",
                     },
-                    c = { bg = "#1e1f25", fg = "#e3e2e9" },
+                    c = { bg = "#1e1f25", fg = "#e2e2e9" },
                 },
             }
             custom_gruvbox.normal.c.bg = "#1e1f25"
-            custom_gruvbox.normal.c.fg = "#e3e2e9"
+            custom_gruvbox.normal.c.fg = "#e2e2e9"
 
             require("lualine").setup({
                 options = { theme = custom_gruvbox },

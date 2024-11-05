@@ -12,21 +12,21 @@ Singleton {
 
     readonly property string inverse_on_surface: "#2f3036";
 
-    readonly property string inverse_primary: "#495d92";
+    readonly property string inverse_primary: "#485d92";
 
-    readonly property string inverse_surface: "#e3e2e9";
+    readonly property string inverse_surface: "#e2e2e9";
 
-    readonly property string on_background: "#e3e2e9";
+    readonly property string on_background: "#e2e2e9";
 
     readonly property string on_error: "#690005";
 
     readonly property string on_error_container: "#ffdad6";
 
-    readonly property string on_primary: "#182e60";
+    readonly property string on_primary: "#172e60";
 
     readonly property string on_primary_container: "#dae2ff";
 
-    readonly property string on_primary_fixed: "#001848";
+    readonly property string on_primary_fixed: "#001847";
 
     readonly property string on_primary_fixed_variant: "#304578";
 
@@ -38,15 +38,15 @@ Singleton {
 
     readonly property string on_secondary_fixed_variant: "#404659";
 
-    readonly property string on_surface: "#e3e2e9";
+    readonly property string on_surface: "#e2e2e9";
 
     readonly property string on_surface_variant: "#c5c6d0";
 
-    readonly property string on_tertiary: "#422741";
+    readonly property string on_tertiary: "#412742";
 
     readonly property string on_tertiary_container: "#fed7f9";
 
-    readonly property string on_tertiary_fixed: "#2b122b";
+    readonly property string on_tertiary_fixed: "#2b122c";
 
     readonly property string on_tertiary_fixed_variant: "#5a3d59";
 
@@ -92,12 +92,12 @@ Singleton {
 
     readonly property string surface_variant: "#45464f";
 
-    readonly property string tertiary: "#e1bbdc";
+    readonly property string tertiary: "#e1bbdd";
 
     readonly property string tertiary_container: "#5a3d59";
 
     readonly property string tertiary_fixed: "#fed7f9";
 
-    readonly property string tertiary_fixed_dim: "#e1bbdc";
+    readonly property string tertiary_fixed_dim: "#e1bbdd";
 
 }

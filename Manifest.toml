@@ -1,5 +1,5 @@
 [config]
-wallpaper = ".config/wallpapers/bliss512.jpg"
+wallpaper = ".config/wallpapers/bliss.jpg"
 
 [files]
 config     = {target=".config"                                                                            }

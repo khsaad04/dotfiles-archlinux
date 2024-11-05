@@ -22,5 +22,5 @@ disabled = true
 [username]
 format = "[$user]($style)"
 show_always = true
-style_root = "bold fg:#182e60 bg:#b2c5ff"
-style_user = "bold fg:#182e60 bg:#b2c5ff"
+style_root = "bold fg:#172e60 bg:#b2c5ff"
+style_user = "bold fg:#172e60 bg:#b2c5ff"
