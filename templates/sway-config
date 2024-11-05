@@ -9,6 +9,8 @@ exec {
   dunst &
   wl-clipboard &
   wl-clip-persist --clipboard regular &
+  fcitx5
+  udiskie
 }
 
 ### Variables
