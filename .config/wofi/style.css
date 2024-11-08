@@ -2,7 +2,7 @@
   all: initial;
   font-family: Iosevka, Symbols Nerd Font;
   font-size: 16px;
-  color: #e2e2e9;
+  color: #e5e3d6;
   border-radius: 8px;
   margin: 2px;
   padding: 2px;
@@ -11,17 +11,17 @@
 
 #window {
   margin: 0;
-  background: #121318;
-  border: 2px solid #b2c5ff;
+  background: #13140c;
+  border: 2px solid #c5cd7a;
 }
 
 #input {
   margin: 10px;
   padding: 10px;
-  background: #1e1f25;
+  background: #202018;
 }
 
 #entry:selected {
-  background-color: #1e1f25;
-  color: #b2c5ff;
+  background-color: #202018;
+  color: #c5cd7a;
 }

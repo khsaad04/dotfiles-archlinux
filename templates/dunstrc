@@ -10,11 +10,6 @@ markup="full"
 offset="10x10"
 origin="bottom-right"
 
-[urgency_critical]
-background="#{{error}}"
-foreground="#{{on_error}}"
-timeout=0
-
 [urgency_low]
 background="#{{surface_container_highest}}"
 foreground="#{{primary}}"
@@ -26,3 +21,8 @@ background="#{{surface_container_highest}}"
 foreground="#{{primary}}"
 highlight="#{{primary}}"
 timeout=10
+
+[urgency_critical]
+background="#{{error}}"
+foreground="#{{on_error}}"
+timeout=0

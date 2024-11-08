@@ -1,26 +1,27 @@
 format = "[](fg:#{{primary}})$username[](fg:#{{primary}} bg:#{{primary_container}})$directory[](fg:#{{primary_container}})$all$cmd_duration\n$character"
-[character]
-error_symbol = "[❯](bold #{{error}})"
-success_symbol = "[❯](bold #{{primary}})"
 
-[cmd_duration]
-format = " took [$duration]($style)"
+[username]
+format = "[$user]($style)"
+style_root = "bold fg:#{{on_primary}} bg:#{{primary}}"
+style_user = "bold fg:#{{on_primary}} bg:#{{primary}}"
+show_always = true
 
 [directory]
 format = "[[ $path]($style)[$read_only]($read_only_style)](bg:surface1)"
-read_only_style = "bold fg:#{{on_primary_container}} bg:#{{primary_container}}"
 style = "bold fg:#{{on_primary_container}} bg:#{{primary_container}}"
+read_only_style = "bold fg:#{{on_primary_container}} bg:#{{primary_container}}"
+
+[line_break]
+disabled = true
 
 [git_branch]
 format = " [$symbol$branch(:$remote_branch)]($style) "
 style = "bold #{{on_primary_container}}"
 symbol = " "
 
-[line_break]
-disabled = true
+[cmd_duration]
+format = " took [$duration]($style)"
 
-[username]
-format = "[$user]($style)"
-show_always = true
-style_root = "bold fg:#{{on_primary}} bg:#{{primary}}"
-style_user = "bold fg:#{{on_primary}} bg:#{{primary}}"
+[character]
+error_symbol = "[❯](bold #{{error}})"
+success_symbol = "[❯](bold #{{primary}})"

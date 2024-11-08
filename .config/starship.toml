@@ -1,26 +1,27 @@
-format = "[](fg:#b2c5ff)$username[](fg:#b2c5ff bg:#304578)$directory[](fg:#304578)$all$cmd_duration\n$character"
-[character]
-error_symbol = "[❯](bold #ffb4ab)"
-success_symbol = "[❯](bold #b2c5ff)"
+format = "[](fg:#c5cd7a)$username[](fg:#c5cd7a bg:#444b04)$directory[](fg:#444b04)$all$cmd_duration\n$character"
 
-[cmd_duration]
-format = " took [$duration]($style)"
+[username]
+format = "[$user]($style)"
+style_root = "bold fg:#2f3300 bg:#c5cd7a"
+style_user = "bold fg:#2f3300 bg:#c5cd7a"
+show_always = true
 
 [directory]
 format = "[[ $path]($style)[$read_only]($read_only_style)](bg:surface1)"
-read_only_style = "bold fg:#dae2ff bg:#304578"
-style = "bold fg:#dae2ff bg:#304578"
-
-[git_branch]
-format = " [$symbol$branch(:$remote_branch)]($style) "
-style = "bold #dae2ff"
-symbol = " "
+style = "bold fg:#e1e994 bg:#444b04"
+read_only_style = "bold fg:#e1e994 bg:#444b04"
 
 [line_break]
 disabled = true
 
-[username]
-format = "[$user]($style)"
-show_always = true
-style_root = "bold fg:#172e60 bg:#b2c5ff"
-style_user = "bold fg:#172e60 bg:#b2c5ff"
+[git_branch]
+format = " [$symbol$branch(:$remote_branch)]($style) "
+style = "bold #e1e994"
+symbol = " "
+
+[cmd_duration]
+format = " took [$duration]($style)"
+
+[character]
+error_symbol = "[❯](bold #ffb4ab)"
+success_symbol = "[❯](bold #c5cd7a)"

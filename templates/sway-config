@@ -7,10 +7,9 @@ exec {
   foot --server &
   nm-applet --indicator &
   dunst &
-  wl-clipboard &
-  wl-clip-persist --clipboard regular &
+  wl-clip-persist -c regular &
   fcitx5
-  udiskie
+  udiskie -t
 }
 
 ### Variables
