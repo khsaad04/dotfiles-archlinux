@@ -19,7 +19,7 @@ up)
     volume=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | tr -dc '0-9' | sed 's/^0\{1,2\}//')
     header="Volume"
     text="Currently at $volume%"
-    icon="~/.config/icons/vol-up.png"
+    icon="/home/khsaad/.config/icons/vol-up.png"
     id=$id_output
     notification_bar;;
 
@@ -28,7 +28,7 @@ down)
     volume=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | tr -dc '0-9' | sed 's/^0\{1,2\}//')
     header="Volume"
     text="Currently at $volume%"
-    icon="~/.config/icons/vol-down.png"
+    icon="/home/khsaad/.config/icons/vol-down.png"
     id=$id_output
     notification_bar;;
 
@@ -37,14 +37,14 @@ mute)
     if [ "$is_muted_output" == "[]" ]; then
         header="Volume"
         text="Unmuted."
-        icon="~/.config/icons/vol.png"
+        icon="/home/khsaad/.config/icons/vol.png"
         id=$id_output
         wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
         notification_mute
     else
         header="Volume"
         text="Muted."
-        icon="~/.config/icons/vol-muted.png"
+        icon="/home/khsaad/.config/icons/vol-muted.png"
         id=$id_output
         wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
         notification_mute
