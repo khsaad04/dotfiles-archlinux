@@ -15,6 +15,6 @@ quickshell = {target=".config/quickshell/Colors.qml",            template="templ
 sway       = {target=".config/sway/config",                      template="templates/sway-config"         }
 tmux       = {target=".config/tmux/tmux.conf",                   template="templates/tmux.conf"           }
 tofi       = {target=".config/tofi/config",                      template="templates/tofi-config"         }
-waybar     = {target=".config/waybar/colors.css",                template="templates/waybar-colors.css"   }
+waybar     = {target=".config/waybar/style.css",                 template="templates/waybar-style.css"    }
 wofi       = {target=".config/wofi/style.css",                   template="templates/wofi-style.css"      }
 starship   = {target=".config/starship.toml",                    template="templates/starship.toml"       }

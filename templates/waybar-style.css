@@ -20,21 +20,21 @@ tooltip,
 }
 
 window#waybar {
-  background-color: #13140c;
-  color: #e5e3d6;
+  background-color: #{{surface}};
+  color: #{{on_surface}};
 }
 
 tooltip {
   font-size: 12;
   font-weight: bold;
-  background-color: #13140c;
-  color: #e5e3d6;
-  border: 1px solid #929282;
+  background-color: #{{surface}};
+  color: #{{on_surface}};
+  border: 1px solid #{{outline}};
   border-radius: 2px;
 }
 
 #workspaces {
-  background-color: #35352d;
+  background-color: #{{surface_container_highest}};
   border-radius: 2px;
   margin: 2px 2px;
 }
@@ -50,20 +50,20 @@ tooltip {
 
 #workspaces button.active,
 #workspaces button.focused {
-  background-color: #e1e994;
+  background-color: #{{primary_fixed}};
 }
 
 #workspaces button label {
-  color: #e1e994;
+  color: #{{primary_fixed}};
 }
 
 #workspaces button.active label,
 #workspaces button.focused label {
-  color: #1a1d00;
+  color: #{{on_primary_fixed}};
 }
 
 #mpris {
-  color: #13140c;
+  color: #{{background}};
   margin-top: 3px;
   margin-bottom: 3px;
   padding: 0px 3px;
@@ -114,8 +114,8 @@ tooltip {
 #memory,
 #clock,
 #tray {
-  color: #e1e994;
-  background-color: #35352d;
+  color: #{{primary_fixed}};
+  background-color: #{{surface_container_highest}};
   border-radius: 2px;
   margin: 2px 2px;
   padding: 0px 3px;
@@ -124,8 +124,8 @@ tooltip {
 #custom-power {
   font-size: 12px;
   font-weight: 400;
-  color: #ffb4ab;
-  background-color: #35352d;
+  color: #{{error}};
+  background-color: #{{surface_container_highest}};
   border-radius: 2px;
   margin: 2px 2px;
   padding: 0px 3px;
@@ -134,8 +134,8 @@ tooltip {
 #custom-launcher {
   font-size: 12px;
   font-weight: 400;
-  color: #beecdc;
-  background-color: #234e43;
+  color: #{{on_tertiary_container}};
+  background-color: #{{tertiary_container}};
   border-radius: 2px;
   margin: 2px 2px;
   padding: 0px 3px;
